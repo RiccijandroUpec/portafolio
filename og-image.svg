@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a151a" />
+      <stop offset="100%" stop-color="#102a34" />
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f2bc5e" />
+      <stop offset="100%" stop-color="#64c2bf" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="1060" cy="80" r="160" fill="#f2bc5e" opacity="0.12" />
+  <circle cx="100" cy="530" r="170" fill="#64c2bf" opacity="0.14" />
+  <text x="100" y="250" fill="#eef5f7" font-size="70" font-family="Georgia, serif" font-weight="700">Riccijandro</text>
+  <text x="100" y="320" fill="#d9e8ec" font-size="38" font-family="Trebuchet MS, sans-serif">Ingeniero en Computacion</text>
+  <text x="100" y="380" fill="#a9c3cb" font-size="32" font-family="Trebuchet MS, sans-serif">Software · Sistemas Operativos · Open Source</text>
+  <rect x="100" y="430" width="450" height="8" rx="4" fill="url(#acc)" />
+</svg>

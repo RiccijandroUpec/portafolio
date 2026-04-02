@@ -3,11 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riccijandro | Ingeniero en Computacion y Open Source</title>
+
     <meta
       name="description"
-      content="Portafolio premium de Ingeniero en Computacion enfocado en software, sistemas operativos y open source."
+      content="Portafolio premium de Riccijandro, ingeniero en computacion: desarrollo de software, sistemas operativos y contribuciones open source."
     />
-    <title>Ingeniero en Computacion | Portafolio Premium</title>
+    <meta
+      name="keywords"
+      content="Riccijandro, ingeniero en computacion, desarrollador de software, sistemas operativos, open source, portfolio"
+    />
+    <meta name="author" content="Riccijandro" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#09151a" />
+
+    <link rel="canonical" href="https://riccijandroupec.github.io/portafolio/" />
+    <link rel="alternate" href="https://riccijandroupec.github.io/portafolio/?lang=es" hreflang="es" />
+    <link rel="alternate" href="https://riccijandroupec.github.io/portafolio/?lang=en" hreflang="en" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Riccijandro | Software, OS y Open Source" />
+    <meta
+      property="og:description"
+      content="Ingeniero en computacion enfocado en desarrollo de software, sistemas operativos y proyectos open source."
+    />
+    <meta property="og:url" content="https://riccijandroupec.github.io/portafolio/" />
+    <meta property="og:image" content="https://riccijandroupec.github.io/portafolio/og-image.svg" />
+    <meta property="og:locale" content="es_EC" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Riccijandro | Ingeniero en Computacion" />
+    <meta
+      name="twitter:description"
+      content="Portafolio profesional con proyectos reales, metricas verificables y enfoque open source."
+    />
+    <meta name="twitter:image" content="https://riccijandroupec.github.io/portafolio/og-image.svg" />
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="manifest" href="site.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +50,34 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Riccijandro",
+        "url": "https://github.com/RiccijandroUpec",
+        "sameAs": [
+          "https://github.com/RiccijandroUpec",
+          "https://www.linkedin.com/in/riccijandro"
+        ],
+        "jobTitle": "Ingeniero en Computacion",
+        "knowsAbout": [
+          "Software Engineering",
+          "Operating Systems",
+          "Open Source"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelance"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ibarra",
+          "addressCountry": "EC"
+        }
+      }
+    </script>
   </head>
   <body>
     <div class="bg-glow bg-glow-one"></div>
@@ -23,9 +85,9 @@
 
     <header class="site-header">
       <div class="container nav-wrap">
-        <a class="brand" href="#home">
+        <a class="brand" href="#home" aria-label="Inicio">
           <span class="brand-dot"></span>
-          <span>Tu Nombre</span>
+          <span>Riccijandro</span>
         </a>
 
         <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
@@ -35,11 +97,12 @@
         </button>
 
         <nav class="nav" id="mainNav">
-          <a href="#about">Sobre mi</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Proyectos</a>
-          <a href="#opensource">Open Source</a>
-          <a href="#contact">Contacto</a>
+          <a href="#about" data-i18n="navAbout">Sobre mi</a>
+          <a href="#skills" data-i18n="navSkills">Skills</a>
+          <a href="#projects" data-i18n="navProjects">Proyectos</a>
+          <a href="#opensource" data-i18n="navOpenSource">Open Source</a>
+          <a href="#contact" data-i18n="navContact">Contacto</a>
+          <button class="lang-toggle" id="langToggle" type="button">EN</button>
         </nav>
       </div>
     </header>
@@ -48,43 +111,43 @@
       <section class="hero section">
         <div class="container hero-grid">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Ingeniero en Computacion</p>
-            <h1>Construyo software robusto, elegante y con impacto real.</h1>
-            <p class="hero-text">
-              Especialista en desarrollo, sistemas operativos y arquitectura tecnica.
-              Me apasiona crear productos escalables y contribuir activamente al ecosistema open source.
+            <p class="eyebrow" data-i18n="role">Ingeniero en Computacion</p>
+            <h1 data-i18n="heroTitle">Construyo software robusto, elegante y con impacto real.</h1>
+            <p class="hero-text" data-i18n="heroText">
+              Especialista en desarrollo de software, sistemas operativos y arquitectura tecnica.
+              Construyo soluciones mantenibles, escalables y listas para produccion.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#projects">Ver proyectos</a>
-              <a class="btn btn-ghost" href="#contact">Hablemos</a>
+              <a class="btn btn-primary" href="#projects" data-i18n="heroCtaProjects">Ver proyectos</a>
+              <a class="btn btn-ghost" href="#contact" data-i18n="heroCtaContact">Hablemos</a>
+              <a class="btn btn-ghost" href="Riccijandro-CV.html" target="_blank" rel="noopener" data-i18n="heroCtaCv">Ver CV</a>
             </div>
             <div class="stat-row">
               <article>
-                <h3>+7</h3>
-                <p>anios creando software</p>
+                <h3 id="metricRepos">12</h3>
+                <p data-i18n="metricRepos">repositorios publicos</p>
               </article>
               <article>
-                <h3>+40</h3>
-                <p>proyectos entregados</p>
+                <h3 id="metricStars">1</h3>
+                <p data-i18n="metricStars">estrellas acumuladas</p>
               </article>
               <article>
-                <h3>100%</h3>
-                <p>enfoque open source</p>
+                <h3 id="metricFollowers">1</h3>
+                <p data-i18n="metricFollowers">seguidores en GitHub</p>
               </article>
             </div>
           </div>
 
           <aside class="hero-card reveal delay-1">
-            <p class="card-kicker">Stack actual</p>
+            <p class="card-kicker" data-i18n="verifiedTitle">Metricas verificables</p>
             <ul>
-              <li>Backend: Node.js, Python, PHP, Go</li>
-              <li>Frontend: React, TypeScript, CSS avanzado</li>
-              <li>Sistemas: Linux, BSD, scripting y automatizacion</li>
-              <li>Infra: Docker, CI/CD, observabilidad</li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/RiccijandroUpec" target="_blank" rel="noopener">github.com/RiccijandroUpec</a></li>
+              <li><strong>Ubicacion:</strong> Ibarra, Ecuador</li>
+              <li><strong>Enfoque:</strong> software, sistemas operativos, open source</li>
             </ul>
             <div class="card-line"></div>
-            <p class="quote">
-              "La calidad no es accidental; es resultado de decisiones de ingenieria." 
+            <p class="quote" data-i18n="quoteText">
+              "Maximo esfuerzo. Siempre."
             </p>
           </aside>
         </div>
@@ -93,19 +156,23 @@
       <section class="section" id="about">
         <div class="container section-grid">
           <div class="section-head reveal">
-            <p class="eyebrow">Sobre mi</p>
-            <h2>Ingenieria con criterio de producto y mentalidad de sistema.</h2>
+            <p class="eyebrow" data-i18n="aboutEyebrow">Sobre mi</p>
+            <h2 data-i18n="aboutTitle">Ingenieria con mentalidad de sistema y foco en resultados.</h2>
           </div>
           <div class="section-content reveal delay-1">
-            <p>
-              Soy ingeniero en computacion con enfoque integral: desarrollo de software,
-              analisis de rendimiento, seguridad y operaciones en entornos Linux.
-              Me gusta resolver problemas complejos con soluciones simples, mantenibles y medibles.
+            <p data-i18n="aboutP1">
+              Soy Riccijandro, ingeniero en computacion y desarrollador de software. Disfruto diseñar,
+              construir y optimizar aplicaciones con arquitectura limpia y mantenimiento sencillo.
             </p>
-            <p>
-              Trabajo bien desde la idea inicial hasta la puesta en produccion,
-              combinando excelencia tecnica con comunicacion clara para equipos y clientes.
+            <p data-i18n="aboutP2">
+              Tambien trabajo con sistemas operativos, automatizacion y herramientas para equipos tecnicos.
+              Mi camino profesional esta muy ligado al open source y al aprendizaje continuo.
             </p>
+            <div class="social-row">
+              <a href="https://github.com/RiccijandroUpec" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.linkedin.com/in/riccijandro" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="mailto:riccijandro.dev@gmail.com">riccijandro.dev@gmail.com</a>
+            </div>
           </div>
         </div>
       </section>
@@ -113,26 +180,26 @@
       <section class="section" id="skills">
         <div class="container">
           <div class="section-head reveal">
-            <p class="eyebrow">Skills</p>
-            <h2>Capacidades tecnicas de alto rendimiento.</h2>
+            <p class="eyebrow" data-i18n="skillsEyebrow">Skills</p>
+            <h2 data-i18n="skillsTitle">Capacidades tecnicas de alto rendimiento.</h2>
           </div>
 
           <div class="skills-grid">
             <article class="skill-card reveal">
-              <h3>Desarrollo de software</h3>
-              <p>Arquitectura limpia, APIs, pruebas, mantenibilidad y foco en performance.</p>
+              <h3 data-i18n="skill1Title">Desarrollo de software</h3>
+              <p data-i18n="skill1Text">Aplicaciones web, arquitectura limpia, APIs y buenas practicas de codigo.</p>
             </article>
             <article class="skill-card reveal delay-1">
-              <h3>Sistemas operativos</h3>
-              <p>Administracion Linux, tuning de sistema, shell scripting y troubleshooting.</p>
+              <h3 data-i18n="skill2Title">Sistemas operativos</h3>
+              <p data-i18n="skill2Text">Linux, shell scripting, administracion y solucion de problemas en entorno real.</p>
             </article>
             <article class="skill-card reveal delay-2">
-              <h3>Open source</h3>
-              <p>Contribuciones, documentacion, revision de PRs y colaboracion comunitaria.</p>
+              <h3 data-i18n="skill3Title">Open source</h3>
+              <p data-i18n="skill3Text">Colaboracion comunitaria, repositorios publicos y mejora continua.</p>
             </article>
             <article class="skill-card reveal">
-              <h3>DevOps practico</h3>
-              <p>Contenedores, pipelines CI/CD, despliegues confiables y monitoreo.</p>
+              <h3 data-i18n="skill4Title">Stack principal</h3>
+              <p data-i18n="skill4Text">PHP, JavaScript, Python, HTML, CSS y entornos de desarrollo productivos.</p>
             </article>
           </div>
         </div>
@@ -141,34 +208,28 @@
       <section class="section" id="projects">
         <div class="container">
           <div class="section-head reveal">
-            <p class="eyebrow">Proyectos</p>
-            <h2>Resultados concretos, tecnologia aplicada.</h2>
+            <p class="eyebrow" data-i18n="projectsEyebrow">Proyectos reales</p>
+            <h2 data-i18n="projectsTitle">Repositorios seleccionados con tecnologias y metricas.</h2>
           </div>
 
-          <div class="projects-grid">
+          <div class="projects-grid" id="projectsGrid">
             <article class="project-card reveal">
-              <p class="project-tag">Plataforma SaaS</p>
-              <h3>Suite de gestion para operaciones</h3>
-              <p>
-                Plataforma con panel analitico, autenticacion robusta y procesos automatizados.
-              </p>
-              <a href="#">Caso de estudio</a>
+              <p class="project-tag">Blade · 1 estrella</p>
+              <h3>dietas-hospital</h3>
+              <p>Aplicacion web para guardar dietas hospitalarias.</p>
+              <a href="https://github.com/RiccijandroUpec/dietas-hospital" target="_blank" rel="noopener" data-i18n="projectView">Ver repositorio</a>
             </article>
             <article class="project-card reveal delay-1">
-              <p class="project-tag">Infra y observabilidad</p>
-              <h3>Stack de monitoreo para produccion</h3>
-              <p>
-                Dashboards, alertas y trazabilidad completa para reducir incidentes criticos.
-              </p>
-              <a href="#">Ver detalles</a>
+              <p class="project-tag">Python · 0 estrellas</p>
+              <h3>Turtles</h3>
+              <p>Juego en Python con enfoque en logica y desarrollo.</p>
+              <a href="https://github.com/RiccijandroUpec/Turtles" target="_blank" rel="noopener" data-i18n="projectView">Ver repositorio</a>
             </article>
             <article class="project-card reveal delay-2">
-              <p class="project-tag">Automatizacion</p>
-              <h3>Toolkit de scripting para equipos TI</h3>
-              <p>
-                Conjunto de scripts y utilidades para tareas repetitivas en entornos Linux.
-              </p>
-              <a href="#">Repositorio</a>
+              <p class="project-tag">HTML · 0 estrellas</p>
+              <h3>recargas</h3>
+              <p>Pagina web orientada a negocio local.</p>
+              <a href="https://github.com/RiccijandroUpec/recargas" target="_blank" rel="noopener" data-i18n="projectView">Ver repositorio</a>
             </article>
           </div>
         </div>
@@ -177,25 +238,25 @@
       <section class="section" id="opensource">
         <div class="container open-source reveal">
           <div>
-            <p class="eyebrow">Open Source</p>
-            <h2>Construir en publico. Aprender en comunidad.</h2>
-            <p>
-              Creo en compartir conocimiento: publico herramientas, mejoras y guias tecnicas
-              para que otras personas puedan construir mas rapido y mejor.
+            <p class="eyebrow" data-i18n="osEyebrow">Open Source</p>
+            <h2 data-i18n="osTitle">Construir en publico. Aprender en comunidad.</h2>
+            <p data-i18n="osText">
+              Mi perfil open source refleja contribuciones reales, aprendizaje constante
+              y una mentalidad de compartir conocimiento util.
             </p>
           </div>
           <div class="opensource-list">
             <article>
-              <h3>Libreria CLI</h3>
-              <p>Automatizacion para flujos de desarrollo y mantenimiento.</p>
+              <h3><span id="metricCommits90">0</span> <span data-i18n="osMetric1">eventos push en 90 dias</span></h3>
+              <p data-i18n="osMetric1Text">Actividad reciente registrada en eventos publicos de GitHub.</p>
             </article>
             <article>
-              <h3>Plantillas de arquitectura</h3>
-              <p>Base para proyectos escalables con buenas practicas integradas.</p>
+              <h3><span id="metricYears">6</span> <span data-i18n="osMetric2">anios en GitHub</span></h3>
+              <p data-i18n="osMetric2Text">Trayectoria desde la creacion de la cuenta en 2020.</p>
             </article>
             <article>
-              <h3>Documentacion tecnica</h3>
-              <p>Guias claras para deployment, seguridad y observabilidad.</p>
+              <h3><span id="metricTopLang">PHP</span> <span data-i18n="osMetric3">como tecnologia destacada</span></h3>
+              <p data-i18n="osMetric3Text">Lenguaje con mayor presencia en repositorios visibles.</p>
             </article>
           </div>
         </div>
@@ -203,14 +264,36 @@
 
       <section class="section contact" id="contact">
         <div class="container contact-wrap reveal">
-          <p class="eyebrow">Contacto</p>
-          <h2>Listo para crear algo grande juntos.</h2>
-          <p>
-            Escribeme para colaboraciones, consultoria o desarrollo de producto.
+          <p class="eyebrow" data-i18n="contactEyebrow">Contacto</p>
+          <h2 data-i18n="contactTitle">Listo para colaborar en proyectos de alto nivel.</h2>
+          <p data-i18n="contactText">
+            Enviame un mensaje y te respondo con enfoque tecnico y soluciones claras.
           </p>
+
+          <form class="contact-form" id="contactForm" action="contact.php" method="post">
+            <input type="text" name="company" id="company" autocomplete="off" tabindex="-1" />
+            <div class="form-grid">
+              <label>
+                <span data-i18n="formName">Nombre</span>
+                <input type="text" name="name" required />
+              </label>
+              <label>
+                <span data-i18n="formEmail">Correo</span>
+                <input type="email" name="email" required />
+              </label>
+            </div>
+            <label>
+              <span data-i18n="formMessage">Mensaje</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit" data-i18n="formSend">Enviar mensaje</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+
           <div class="contact-actions">
-            <a class="btn btn-primary" href="mailto:tu@email.com">Enviar email</a>
-            <a class="btn btn-ghost" href="#">Descargar CV</a>
+            <a class="btn btn-ghost" href="mailto:riccijandro.dev@gmail.com">riccijandro.dev@gmail.com</a>
+            <a class="btn btn-ghost" href="https://github.com/RiccijandroUpec" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/riccijandro" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
       </section>
@@ -218,8 +301,8 @@
 
     <footer class="site-footer">
       <div class="container footer-wrap">
-        <p>© <span id="year"></span> Tu Nombre. All rights reserved.</p>
-        <p>Hecho con enfoque en calidad, sistemas y open source.</p>
+        <p>© <span id="year"></span> Riccijandro.</p>
+        <p data-i18n="footerText">Software, sistemas operativos y open source.</p>
       </div>
     </footer>
   </body>
