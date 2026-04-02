@@ -4,170 +4,448 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV | Richard Stalyn Rodriguez Villarreal</title>
+    <meta name="description" content="Curriculum vitae de Richard Stalyn Rodriguez Villarreal, Ingeniero en Computacion con experiencia en docencia, soporte tecnico, desarrollo de software y codigo abierto." />
     <style>
       :root {
-        --bg: #f5f8f9;
-        --text: #112126;
-        --muted: #4f676f;
-        --line: #d6e2e6;
+        --bg: #eef4f6;
+        --surface: #ffffff;
+        --surface-2: #f7fbfc;
+        --text: #102127;
+        --muted: #516972;
+        --line: #d7e3e7;
+        --accent: #0f5b78;
+        --accent-2: #c58a2b;
       }
+
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         margin: 0;
-        font-family: "Trebuchet MS", sans-serif;
+        font-family: "Trebuchet MS", Arial, sans-serif;
         color: var(--text);
-        background: var(--bg);
+        background:
+          radial-gradient(circle at top right, rgba(15, 91, 120, 0.08), transparent 28%),
+          radial-gradient(circle at left bottom, rgba(197, 138, 43, 0.08), transparent 30%),
+          var(--bg);
       }
-      .cv {
-        width: min(900px, 92vw);
-        margin: 2rem auto;
-        background: #fff;
+
+      .page {
+        width: min(1100px, 94vw);
+        margin: 2rem auto 3rem;
+      }
+
+      .card {
+        background: var(--surface);
         border: 1px solid var(--line);
+        border-radius: 18px;
+        box-shadow: 0 18px 40px rgba(16, 33, 39, 0.08);
+        overflow: hidden;
+      }
+
+      .hero {
+        padding: 1.6rem;
+        background: linear-gradient(135deg, #0f2630 0%, #11384a 100%);
+        color: #eef7f9;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        gap: 1rem;
+      }
+
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.78rem;
+        color: #d8eaf0;
+        margin: 0 0 0.5rem;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 3.2rem);
+        line-height: 1.05;
+      }
+
+      .subtitle {
+        margin: 0.8rem 0 0;
+        max-width: 70ch;
+        color: #c8dbe1;
+        line-height: 1.55;
+      }
+
+      .contact-box {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.12);
         border-radius: 14px;
-        padding: 1.4rem;
+        padding: 1rem;
       }
-      .lead {
-        margin-top: 0.3rem;
-        margin-bottom: 1.1rem;
-        font-weight: 600;
-        color: #2d444c;
-      }
-      h1, h2 {
-        margin-top: 0;
-      }
-      h2 {
-        font-size: 1.1rem;
+
+      .contact-box h2,
+      .section h2 {
+        margin: 0 0 0.75rem;
+        font-size: 1.08rem;
         border-bottom: 1px solid var(--line);
-        padding-bottom: 0.4rem;
-        margin-top: 1.2rem;
+        padding-bottom: 0.45rem;
       }
-      p, li {
+
+      .contact-list,
+      .bullet-list {
+        margin: 0;
+        padding-left: 1.15rem;
+      }
+
+      .contact-list li,
+      .bullet-list li,
+      p {
         color: var(--muted);
+        line-height: 1.55;
       }
-      ul {
-        margin-top: 0.55rem;
+
+      .sections {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
       }
-      .chips {
+
+      .section {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 1rem;
+      }
+
+      .full {
+        grid-column: 1 / -1;
+      }
+
+      .tag-row {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.45rem;
+        gap: 0.5rem;
       }
-      .chip {
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
         border: 1px solid var(--line);
-        background: #f7fbfc;
-        color: #2f4b53;
+        background: var(--surface-2);
+        color: #23424d;
         border-radius: 999px;
-        padding: 0.28rem 0.62rem;
-        font-size: 0.88rem;
+        padding: 0.3rem 0.7rem;
+        font-size: 0.9rem;
       }
-      .project {
-        margin-bottom: 0.9rem;
+
+      .timeline {
+        display: grid;
+        gap: 1rem;
       }
-      .project h3 {
-        margin: 0;
+
+      .item {
+        background: var(--surface-2);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 1rem;
+      }
+
+      .item h3 {
+        margin: 0 0 0.2rem;
         font-size: 1rem;
       }
-      .project p {
-        margin-top: 0.35rem;
+
+      .meta {
+        margin: 0 0 0.6rem;
+        color: var(--accent);
+        font-weight: 700;
+        font-size: 0.92rem;
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .small {
+        font-size: 0.95rem;
+      }
+
+      .references {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.8rem;
+      }
+
+      .ref {
+        background: var(--surface-2);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 0.9rem;
+      }
+
+      .ref h3 {
+        margin: 0 0 0.25rem;
+        font-size: 0.98rem;
+      }
+
+      .ref p {
+        margin: 0.15rem 0;
+      }
+
+      .footer-note {
+        padding: 1rem 1.2rem 1.2rem;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 860px) {
+        .hero-grid,
+        .sections,
+        .split,
+        .references {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media print {
+        body {
+          background: #fff;
+        }
+
+        .page {
+          width: 100%;
+          margin: 0;
+        }
+
+        .card,
+        .section,
+        .item,
+        .ref {
+          box-shadow: none;
+        }
       }
     </style>
   </head>
   <body>
-    <article class="cv">
-      <h1>Richard Stalyn Rodriguez Villarreal</h1>
-      <p>Ingeniero en Computacion · Ibarra, Ecuador · riccijandro.dev@gmail.com</p>
-      <p class="lead">
-        Desarrollador de software con enfoque en ingenieria practica, mejora continua y cultura open source.
-      </p>
+    <main class="page">
+      <article class="card">
+        <header class="hero">
+          <div class="hero-grid">
+            <div>
+              <p class="eyebrow">Curriculum Vitae</p>
+              <h1>Richard Stalyn Rodriguez Villarreal</h1>
+              <p class="subtitle">
+                Ingeniero en Computacion con experiencia en docencia, desarrollo de software, soporte tecnico,
+                sistemas operativos, gestion de procesos y atencion al cliente. Mi trayectoria me ha llevado a brindar
+                un excelente servicio y a mejorar resultados junto a organizaciones con objetivos claros y ambiciosos.
+              </p>
+            </div>
+            <aside class="contact-box">
+              <h2>Contacto</h2>
+              <ul class="contact-list">
+                <li><strong>Telefono:</strong> 0983185069</li>
+                <li><strong>Mail:</strong> richardrodriguez271@gmail.com</li>
+                <li><strong>Direccion:</strong> Teodoro Gomez y Juan Montalvo</li>
+                <li><strong>Redes:</strong> @riccijandro</li>
+                <li><strong>Ciudad:</strong> Ibarra, Ecuador</li>
+              </ul>
+            </aside>
+          </div>
+        </header>
 
-      <h2>Perfil</h2>
-      <p>
-        Ingeniero en Computacion orientado a construir productos funcionales, mantenibles y con impacto real.
-        Combino desarrollo web, pensamiento de sistemas y disciplina tecnica para resolver problemas de negocio
-        con soluciones simples de operar y faciles de evolucionar.
-      </p>
-      <p>
-        Me motiva trabajar en equipos colaborativos, documentar buenas practicas y contribuir en proyectos
-        abiertos que ayuden a otras personas a aprender, desarrollar y escalar sus ideas.
-      </p>
+        <section class="sections">
+          <section class="section full">
+            <h2>Perfil Profesional</h2>
+            <p>
+              Profesional con formacion en Ingenieria en Computacion, orientado a la solucion de problemas, la mejora
+              continua y la creacion de herramientas utiles para entornos educativos, tecnicos, administrativos y de servicio.
+              Destaco por la facilidad para aprender, adaptarme a distintos entornos laborales, organizar tareas y trabajar bajo presion.
+            </p>
+            <p>
+              Tengo interes en proyectos donde pueda aportar desarrollo web con PHP y Laravel, soporte tecnico, analisis de procesos,
+              docencia y gestion de herramientas digitales. Me defino por la responsabilidad, la comunicacion clara y el trabajo en equipo.
+            </p>
+          </section>
 
-      <h2>Propuesta de Valor</h2>
-      <ul>
-        <li>Traduzco necesidades reales en software claro, estable y escalable.</li>
-        <li>Trabajo de extremo a extremo: analisis, desarrollo, pruebas y entrega.</li>
-        <li>Aplico enfoque de sistemas operativos para mejorar rendimiento y confiabilidad.</li>
-        <li>Impulso cultura open source con aprendizaje continuo y colaboracion tecnica.</li>
-      </ul>
+          <section class="section">
+            <h2>Aptitudes</h2>
+            <ul class="bullet-list">
+              <li>Predisposicion para aprender y brindar conocimientos.</li>
+              <li>Conocimiento de herramientas tecnologicas para organizacion y planificacion.</li>
+              <li>Capacidad para trabajar en equipo.</li>
+              <li>Manejo de programas utilitarios.</li>
+              <li>Manejo de redes sociales.</li>
+              <li>Superacion diaria.</li>
+              <li>Trabajo bajo presion.</li>
+            </ul>
+          </section>
 
-      <h2>Experiencia Laboral</h2>
-      <section class="project">
-        <h3>Hospital San Vicente de Paul - Ibarra, Ecuador</h3>
-        <p>
-          Cargo actual en entorno hospitalario, aportando en soluciones de software, soporte tecnico y mejoras
-          de procesos internos. Trabajo con enfoque en estabilidad operativa, atencion eficiente de incidencias
-          y mejora continua de herramientas para usuarios del area de salud.
-        </p>
-      </section>
+          <section class="section">
+            <h2>Idiomas</h2>
+            <div class="tag-row">
+              <span class="tag">Ingles: 85%</span>
+              <span class="tag">Espanol: Nativo</span>
+            </div>
+          </section>
 
-      <h2>Competencias Tecnicas</h2>
-      <ul>
-        <li>Desarrollo web: PHP, Laravel, JavaScript, HTML, CSS y arquitectura orientada a mantenimiento.</li>
-        <li>Bases de datos: modelado de informacion, consultas y organizacion de datos para aplicaciones web.</li>
-        <li>Sistemas operativos: Linux, linea de comandos, scripting y automatizacion de tareas.</li>
-        <li>Control de versiones: Git, GitHub, trabajo con ramas, pull requests y revision de cambios.</li>
-        <li>Calidad de software: depuracion, mejora incremental y estandarizacion de codigo legible.</li>
-      </ul>
+          <section class="section full">
+            <h2>Educacion</h2>
+            <div class="timeline">
+              <div class="item">
+                <h3>Universidad Politecnica Estatal del Carchi</h3>
+                <p class="meta">Ingeniero en Computacion</p>
+                <p class="small">Formacion profesional en desarrollo de software, sistemas, tecnologia y resolucion de problemas.</p>
+              </div>
+              <div class="item">
+                <h3>Colegio</h3>
+                <p class="meta">Bachillerato General Unificado</p>
+              </div>
+              <div class="item">
+                <h3>Escuela</h3>
+                <p class="meta">Abdon Calderon</p>
+              </div>
+            </div>
+          </section>
 
-      <div class="chips" aria-label="Tecnologias principales">
-        <span class="chip">PHP</span>
-        <span class="chip">Laravel</span>
-        <span class="chip">JavaScript</span>
-        <span class="chip">Python</span>
-        <span class="chip">HTML</span>
-        <span class="chip">CSS</span>
-        <span class="chip">Git</span>
-        <span class="chip">Linux</span>
-      </div>
+          <section class="section full">
+            <h2>Experiencia Profesional</h2>
+            <div class="timeline">
+              <div class="item">
+                <h3>Hospital San Vicente de Paul - Ibarra, Ecuador</h3>
+                <p class="meta">Actual</p>
+                <p>
+                  Participacion en actividades tecnicas y de apoyo orientadas a mantener la continuidad operativa,
+                  la atencion efectiva y la mejora de herramientas utilizadas por los equipos de trabajo.
+                </p>
+              </div>
+              <div class="item">
+                <h3>Docente - UE San Pedro Pascual</h3>
+                <p class="meta">Computacion y Emprendimiento y Gestion</p>
+                <p>
+                  Imparticion de clases, orientacion a estudiantes y desarrollo de contenidos academicos con enfoque practico.
+                </p>
+              </div>
+              <div class="item">
+                <h3>Pasante - Universidad UPEC</h3>
+                <p class="meta">Soporte tecnico, redes y mantenimiento</p>
+                <ul class="bullet-list">
+                  <li>Diagnostico y resolucion de problemas tecnicos.</li>
+                  <li>Mantenimiento preventivo, respaldo y recuperacion de datos.</li>
+                  <li>Administracion de redes y ciberseguridad basica.</li>
+                  <li>Instalacion de software y hardware.</li>
+                  <li>Colaboracion en equipos de trabajo.</li>
+                </ul>
+              </div>
+              <div class="item">
+                <h3>Asistente de Gerencia - Avena Polaca</h3>
+                <p class="meta">Seguimiento de agenda y control documental</p>
+                <p>
+                  Seguimiento de agenda, revision de idoneidad de documentos, control de archivo y creacion de presentaciones mensuales.
+                </p>
+              </div>
+              <div class="item">
+                <h3>Distribuidor - Avena Polaca</h3>
+                <p class="meta">Atencion y asesoria comercial</p>
+                <p>
+                  Recepcion y atencion de clientes, planificacion y toma de decisiones, asesoramiento de compras.
+                </p>
+              </div>
+              <div class="item">
+                <h3>Mercaderista - La Favorita (Supermaxi) Tulcan</h3>
+                <p class="meta">Atencion al cliente, caja, organizacion e inventario</p>
+                <ul class="bullet-list">
+                  <li>Atencion amable y servicial a clientes.</li>
+                  <li>Manejo de caja, transacciones, devoluciones y control de efectivo.</li>
+                  <li>Organizacion de productos, etiquetado, precios e inventario.</li>
+                  <li>Empaquetado, higiene, seguridad y resolucion de problemas.</li>
+                  <li>Trabajo en equipo, manejo de multitudes y profesionalismo.</li>
+                </ul>
+              </div>
+              <div class="item">
+                <h3>Bodeguero - ASOALIMJENNJORD</h3>
+                <p class="meta">Junio - diciembre 2024</p>
+                <p>
+                  Gestion y organizacion de bodegas y almacenes, recepcion, almacenamiento y despacho de mercancias,
+                  con control de inventarios, cumplimiento de normas de seguridad e higiene y apoyo en la rotacion de productos.
+                </p>
+              </div>
+            </div>
+          </section>
 
-      <h2>Proyectos Destacados</h2>
-      <section class="project">
-        <h3>dietas-hospital</h3>
-        <p>
-          Aplicacion web para registro y gestion de dietas hospitalarias. En este proyecto reforcé
-          organizacion de modulos, flujo de datos y usabilidad para un contexto sensible como salud.
-        </p>
-      </section>
-      <section class="project">
-        <h3>Turtles</h3>
-        <p>
-          Juego en Python enfocado en logica y estructura de programa. Proyecto clave para consolidar
-          fundamentos de programacion y pensamiento algorítmico.
-        </p>
-      </section>
-      <section class="project">
-        <h3>recargas</h3>
-        <p>
-          Sitio web orientado a negocio local. Aporte en maquetacion, estructura de contenidos y claridad
-          de interfaz para mejorar comunicacion con usuarios finales.
-        </p>
-      </section>
+          <section class="section full">
+            <h2>Competencias Tecnicas</h2>
+            <div class="tag-row">
+              <span class="tag">PHP</span>
+              <span class="tag">Laravel</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Python</span>
+              <span class="tag">Git</span>
+              <span class="tag">Linux</span>
+              <span class="tag">Soporte Tecnico</span>
+              <span class="tag">Redes</span>
+              <span class="tag">Ofimatica</span>
+            </div>
+          </section>
 
-      <h2>Open Source y Colaboracion</h2>
-      <p>
-        Mantengo repositorios publicos como parte de mi proceso de mejora profesional. Me interesa compartir
-        codigo util, documentar decisiones tecnicas y aportar a comunidades de desarrollo en crecimiento.
-      </p>
+          <section class="section full">
+            <h2>Cursos y Masterclass</h2>
+            <div class="timeline">
+              <div class="item">
+                <h3>Curso de Administracion, buenas practicas de manufactura y metodologias para la mejora continua</h3>
+                <p>
+                  Enfocado en administracion de oficinas y equipos, eficiencia, experiencia, talento humano e innovacion.
+                </p>
+              </div>
+              <div class="item">
+                <h3>Curso de Manejo de Redes</h3>
+                <p>
+                  Estrategia en redes sociales, desarrollo de contenido, gestion de plataformas, monitoreo y analisis de tendencias.
+                </p>
+              </div>
+            </div>
+          </section>
 
-      <h2>Objetivo Profesional</h2>
-      <p>
-        Integrarme en proyectos donde pueda aportar ingenieria de software solida, responsabilidad tecnica
-        y una actitud de aprendizaje permanente para construir soluciones de alto valor.
-      </p>
+          <section class="section full">
+            <h2>Referencias</h2>
+            <div class="references">
+              <div class="ref">
+                <h3>Leticia Montalvo</h3>
+                <p>Subjefa Supermaxi</p>
+                <p>Telefono: 0983724770</p>
+              </div>
+              <div class="ref">
+                <h3>Nathaly Moreno</h3>
+                <p>Avena Polaca</p>
+                <p>Telefono: 0969063841</p>
+              </div>
+              <div class="ref">
+                <h3>Javier Torres</h3>
+                <p>Jefe TICs UPEC</p>
+                <p>Telefono: 0995951836</p>
+              </div>
+            </div>
+          </section>
 
-      <h2>Enlaces</h2>
-      <ul>
-        <li>GitHub: https://github.com/riccijandro</li>
-        <li>LinkedIn: https://www.linkedin.com/in/riccijandro</li>
-      </ul>
-    </article>
+          <section class="section full">
+            <h2>Redes Sociales</h2>
+            <div class="tag-row">
+              <span class="tag">@riccijandro</span>
+              <span class="tag">GitHub: github.com/riccijandro</span>
+              <span class="tag">LinkedIn: linkedin.com/in/riccijandro</span>
+            </div>
+          </section>
+        </section>
+
+        <div class="footer-note">
+          Mi trayectoria profesional me ha llevado a brindar un excelente servicio a los clientes, mejorando resultados junto a empresas e instituciones con objetivos claros y ambiciosos.
+        </div>
+      </article>
+    </main>
   </body>
 </html>

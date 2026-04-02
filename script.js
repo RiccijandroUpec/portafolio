@@ -35,7 +35,7 @@ const i18n = {
   aboutP1:
     "Soy Richard Stalyn Rodriguez Villarreal, ingeniero en computacion y desarrollador de software. Disfruto disenar, construir y optimizar aplicaciones con arquitectura limpia y mantenimiento sencillo.",
   aboutP2:
-    "Actualmente trabajo en el Hospital San Vicente de Paul de Ibarra, Ecuador. Tambien trabajo con sistemas operativos, automatizacion y herramientas para equipos tecnicos, con un camino profesional ligado al codigo abierto.",
+    "Actualmente trabajo en el Hospital San Vicente de Paul de Ibarra, Ecuador. Tambien he sido docente en la UE San Pedro Pascual y en la Universidad Politecnica Estatal del Carchi, ademas de haber trabajado en soporte tecnico, ventas, logistica, administracion y atencion al cliente.",
   skillsEyebrow: "Habilidades",
   skillsTitle: "Capacidades tecnicas de alto rendimiento.",
   skill1Title: "Desarrollo de software",
