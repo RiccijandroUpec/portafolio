@@ -1,6 +1,6 @@
 const profileConfig = {
   githubUser: "riccijandro",
-  name: "Riccijandro",
+  name: "Richard Stalyn Rodriguez Villarreal",
   email: "riccijandro.dev@gmail.com",
   fallbackMetrics: {
     repos: 12,
@@ -13,127 +13,66 @@ const profileConfig = {
 };
 
 const i18n = {
-  es: {
-    navAbout: "Sobre mi",
-    navSkills: "Skills",
-    navProjects: "Proyectos",
-    navOpenSource: "Open Source",
-    navContact: "Contacto",
-    role: "Ingeniero en Computacion",
-    heroTitle: "Construyo software robusto, elegante y con impacto real.",
-    heroText:
-      "Especialista en desarrollo de software, sistemas operativos y arquitectura tecnica. Construyo soluciones mantenibles, escalables y listas para produccion.",
-    heroCtaProjects: "Ver proyectos",
-    heroCtaContact: "Hablemos",
-    heroCtaCv: "Ver CV",
-    metricRepos: "repositorios publicos",
-    metricStars: "estrellas acumuladas",
-    metricFollowers: "seguidores en GitHub",
-    verifiedTitle: "Metricas verificables",
-    quoteText: "\"Maximo esfuerzo. Siempre.\"",
-    aboutEyebrow: "Sobre mi",
-    aboutTitle: "Ingenieria con mentalidad de sistema y foco en resultados.",
-    aboutP1:
-      "Soy Riccijandro, ingeniero en computacion y desarrollador de software. Disfruto disenar, construir y optimizar aplicaciones con arquitectura limpia y mantenimiento sencillo.",
-    aboutP2:
-      "Tambien trabajo con sistemas operativos, automatizacion y herramientas para equipos tecnicos. Mi camino profesional esta muy ligado al open source y al aprendizaje continuo.",
-    skillsEyebrow: "Skills",
-    skillsTitle: "Capacidades tecnicas de alto rendimiento.",
-    skill1Title: "Desarrollo de software",
-    skill1Text: "Aplicaciones web, arquitectura limpia, APIs y buenas practicas de codigo.",
-    skill2Title: "Sistemas operativos",
-    skill2Text: "Linux, shell scripting, administracion y solucion de problemas en entorno real.",
-    skill3Title: "Open source",
-    skill3Text: "Colaboracion comunitaria, repositorios publicos y mejora continua.",
-    skill4Title: "Stack principal",
-    skill4Text: "PHP, JavaScript, Python, HTML, CSS y entornos de desarrollo productivos.",
-    projectsEyebrow: "Proyectos reales",
-    projectsTitle: "Repositorios seleccionados con tecnologias y metricas.",
-    projectView: "Ver repositorio",
-    osEyebrow: "Open Source",
-    osTitle: "Construir en publico. Aprender en comunidad.",
-    osText:
-      "Mi perfil open source refleja contribuciones reales, aprendizaje constante y una mentalidad de compartir conocimiento util.",
-    osMetric1: "eventos push en 90 dias",
-    osMetric1Text: "Actividad reciente registrada en eventos publicos de GitHub.",
-    osMetric2: "anios en GitHub",
-    osMetric2Text: "Trayectoria desde la creacion de la cuenta en 2020.",
-    osMetric3: "como tecnologia destacada",
-    osMetric3Text: "Lenguaje con mayor presencia en repositorios visibles.",
-    contactEyebrow: "Contacto",
-    contactTitle: "Listo para colaborar en proyectos de alto nivel.",
-    contactText: "Enviame un mensaje y te respondo con enfoque tecnico y soluciones claras.",
-    formName: "Nombre",
-    formEmail: "Correo",
-    formMessage: "Mensaje",
-    formSend: "Enviar mensaje",
-    formSuccess: "Mensaje enviado. Te respondere pronto.",
-    formError: "No se pudo enviar. Intenta de nuevo en unos minutos.",
-    footerText: "Software, sistemas operativos y open source.",
-  },
-  en: {
-    navAbout: "About",
-    navSkills: "Skills",
-    navProjects: "Projects",
-    navOpenSource: "Open Source",
-    navContact: "Contact",
-    role: "Computer Engineer",
-    heroTitle: "I build robust, elegant software with real-world impact.",
-    heroText:
-      "Focused on software engineering, operating systems, and technical architecture. I build maintainable and production-ready solutions.",
-    heroCtaProjects: "See projects",
-    heroCtaContact: "Let's talk",
-    heroCtaCv: "View resume",
-    metricRepos: "public repositories",
-    metricStars: "total stars",
-    metricFollowers: "GitHub followers",
-    verifiedTitle: "Verifiable metrics",
-    quoteText: "\"Maximum effort. Always.\"",
-    aboutEyebrow: "About",
-    aboutTitle: "Engineering mindset with systems thinking and strong execution.",
-    aboutP1:
-      "I am Riccijandro, a computer engineer and software developer. I enjoy designing, building, and optimizing maintainable applications with clean architecture.",
-    aboutP2:
-      "I also work with operating systems, automation, and practical tooling for technical teams. My path is deeply connected to open source and continuous learning.",
-    skillsEyebrow: "Skills",
-    skillsTitle: "High-performance technical capabilities.",
-    skill1Title: "Software development",
-    skill1Text: "Web applications, clean architecture, APIs, and solid coding practices.",
-    skill2Title: "Operating systems",
-    skill2Text: "Linux, shell scripting, administration, and real-world troubleshooting.",
-    skill3Title: "Open source",
-    skill3Text: "Community collaboration, public repositories, and continuous improvement.",
-    skill4Title: "Core stack",
-    skill4Text: "PHP, JavaScript, Python, HTML, CSS, and productive development workflows.",
-    projectsEyebrow: "Real projects",
-    projectsTitle: "Selected repositories with technologies and metrics.",
-    projectView: "View repository",
-    osEyebrow: "Open Source",
-    osTitle: "Build in public. Learn with the community.",
-    osText:
-      "My open source profile reflects real contributions, continuous learning, and knowledge sharing.",
-    osMetric1: "push events in 90 days",
-    osMetric1Text: "Recent activity registered from public GitHub events.",
-    osMetric2: "years on GitHub",
-    osMetric2Text: "Track record since account creation in 2020.",
-    osMetric3: "as highlighted technology",
-    osMetric3Text: "Most represented language across visible repositories.",
-    contactEyebrow: "Contact",
-    contactTitle: "Ready to collaborate on high-impact projects.",
-    contactText: "Send me a message and I will reply with technical clarity and practical solutions.",
-    formName: "Name",
-    formEmail: "Email",
-    formMessage: "Message",
-    formSend: "Send message",
-    formSuccess: "Message sent. I will get back to you soon.",
-    formError: "Message could not be sent. Please try again in a few minutes.",
-    footerText: "Software, operating systems, and open source.",
-  },
+  navAbout: "Sobre mi",
+  navSkills: "Habilidades",
+  navProjects: "Proyectos",
+  navOpenSource: "Codigo Abierto",
+  navContact: "Contacto",
+  role: "Ingeniero en Computacion",
+  heroTitle: "Construyo software robusto, elegante y con impacto real.",
+  heroText:
+    "Especialista en desarrollo de software, sistemas operativos y arquitectura tecnica. Construyo soluciones mantenibles, escalables y listas para produccion.",
+  heroCtaProjects: "Ver proyectos",
+  heroCtaContact: "Hablemos",
+  heroCtaCv: "Ver CV",
+  metricRepos: "repositorios publicos",
+  metricStars: "estrellas acumuladas",
+  metricFollowers: "seguidores en GitHub",
+  verifiedTitle: "Metricas verificables",
+  quoteText: "\"Maximo esfuerzo. Siempre.\"",
+  aboutEyebrow: "Sobre mi",
+  aboutTitle: "Ingenieria con mentalidad de sistema y foco en resultados.",
+  aboutP1:
+    "Soy Richard Stalyn Rodriguez Villarreal, ingeniero en computacion y desarrollador de software. Disfruto disenar, construir y optimizar aplicaciones con arquitectura limpia y mantenimiento sencillo.",
+  aboutP2:
+    "Actualmente trabajo en el Hospital San Vicente de Paul de Ibarra, Ecuador. Tambien trabajo con sistemas operativos, automatizacion y herramientas para equipos tecnicos, con un camino profesional ligado al codigo abierto.",
+  skillsEyebrow: "Habilidades",
+  skillsTitle: "Capacidades tecnicas de alto rendimiento.",
+  skill1Title: "Desarrollo de software",
+  skill1Text: "Aplicaciones web, arquitectura limpia, APIs y buenas practicas de codigo.",
+  skill2Title: "Sistemas operativos",
+  skill2Text: "Linux, shell scripting, administracion y solucion de problemas en entorno real.",
+  skill3Title: "Codigo abierto",
+  skill3Text: "Colaboracion comunitaria, repositorios publicos y mejora continua.",
+  skill4Title: "Stack principal",
+  skill4Text: "PHP, Laravel, JavaScript, Python, HTML, CSS y entornos de desarrollo productivos.",
+  projectsEyebrow: "Proyectos reales",
+  projectsTitle: "Repositorios seleccionados con tecnologias y metricas.",
+  projectView: "Ver repositorio",
+  osEyebrow: "Codigo Abierto",
+  osTitle: "Construir en publico. Aprender en comunidad.",
+  osText:
+    "Mi perfil de codigo abierto refleja contribuciones reales, aprendizaje constante y una mentalidad de compartir conocimiento util.",
+  osMetric1: "eventos push en 90 dias",
+  osMetric1Text: "Actividad reciente registrada en eventos publicos de GitHub.",
+  osMetric2: "anios en GitHub",
+  osMetric2Text: "Trayectoria desde la creacion de la cuenta en 2020.",
+  osMetric3: "como tecnologia destacada",
+  osMetric3Text: "Lenguaje con mayor presencia en repositorios visibles.",
+  contactEyebrow: "Contacto",
+  contactTitle: "Listo para colaborar en proyectos de alto nivel.",
+  contactText: "Enviame un mensaje y te respondo con enfoque tecnico y soluciones claras.",
+  formName: "Nombre",
+  formEmail: "Correo",
+  formMessage: "Mensaje",
+  formSend: "Enviar mensaje",
+  formSuccess: "Mensaje enviado. Te respondere pronto.",
+  formError: "No se pudo enviar. Intenta de nuevo en unos minutos.",
+  footerText: "Software, sistemas operativos y codigo abierto.",
 };
 
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
-const langToggle = document.getElementById("langToggle");
 const contactForm = document.getElementById("contactForm");
 const formStatus = document.getElementById("formStatus");
 
@@ -163,9 +102,9 @@ const revealObserver = new IntersectionObserver(
 );
 revealNodes.forEach((node) => revealObserver.observe(node));
 
-function applyLanguage(lang) {
-  const dict = i18n[lang] || i18n.es;
-  document.documentElement.lang = lang;
+function applySpanishContent() {
+  const dict = i18n;
+  document.documentElement.lang = "es";
 
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const key = node.getAttribute("data-i18n");
@@ -174,32 +113,6 @@ function applyLanguage(lang) {
     }
   });
 
-  if (langToggle) {
-    langToggle.textContent = lang === "es" ? "EN" : "ES";
-  }
-
-  localStorage.setItem("portfolioLang", lang);
-}
-
-function getInitialLanguage() {
-  const urlLang = new URLSearchParams(window.location.search).get("lang");
-  if (urlLang === "es" || urlLang === "en") {
-    return urlLang;
-  }
-
-  const saved = localStorage.getItem("portfolioLang");
-  if (saved === "es" || saved === "en") {
-    return saved;
-  }
-
-  return navigator.language.toLowerCase().startsWith("es") ? "es" : "en";
-}
-
-if (langToggle) {
-  langToggle.addEventListener("click", () => {
-    const next = document.documentElement.lang === "es" ? "en" : "es";
-    applyLanguage(next);
-  });
 }
 
 function safeText(value, fallback) {
@@ -221,8 +134,7 @@ function renderProjects(repos) {
     return;
   }
 
-  const currentLang = document.documentElement.lang;
-  const cta = i18n[currentLang].projectView;
+  const cta = i18n.projectView;
 
   const selected = repos
     .filter((repo) => !repo.fork)
@@ -239,12 +151,10 @@ function renderProjects(repos) {
       const stars = Number(repo.stargazers_count || 0);
       const desc = safeText(
         repo.description,
-        currentLang === "es"
-          ? "Repositorio publico con desarrollo activo."
-          : "Public repository with active development."
+        "Repositorio publico con desarrollo activo."
       );
       const delay = idx === 1 ? " delay-1" : idx === 2 ? " delay-2" : "";
-      const starWord = currentLang === "es" ? (stars === 1 ? "estrella" : "estrellas") : stars === 1 ? "star" : "stars";
+      const starWord = stars === 1 ? "estrella" : "estrellas";
 
       return `
         <article class="project-card reveal visible${delay}">
@@ -318,8 +228,7 @@ if (contactForm && formStatus) {
   contactForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const lang = document.documentElement.lang === "en" ? "en" : "es";
-    const dict = i18n[lang];
+    const dict = i18n;
 
     formStatus.textContent = "...";
     formStatus.className = "form-status";
@@ -350,8 +259,7 @@ if (contactForm && formStatus) {
   });
 }
 
-const initialLang = getInitialLanguage();
-applyLanguage(initialLang);
+applySpanishContent();
 loadGithubMetrics();
 
 const yearNode = document.getElementById("year");
