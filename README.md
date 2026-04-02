@@ -2,6 +2,14 @@
 
 Portafolio web premium desarrollado para presentar perfil profesional, experiencia laboral, habilidades tecnicas y proyectos reales.
 
+## Version publicada
+
+El portafolio esta subido y disponible en linea en:
+
+- https://portafolio-production-0da0.up.railway.app/
+
+Tambien puedes usar este repositorio como base local para desarrollo y actualizaciones.
+
 ## Descripcion
 
 Este proyecto muestra la marca personal de Richard Stalyn Rodriguez Villarreal, Ingeniero en Computacion, con enfoque en:
@@ -39,6 +47,14 @@ Este proyecto muestra la marca personal de Richard Stalyn Rodriguez Villarreal, 
 - PHP 8.0 o superior (recomendado)
 - Servidor local (XAMPP en este caso)
 - Conexion a internet para obtener metricas de GitHub
+
+## Despliegue
+
+La version publica del sitio esta alojada en Railway:
+
+- [Portafolio en Railway](https://portafolio-production-0da0.up.railway.app/)
+
+Si realizas cambios, recuerda actualizar el despliegue para mantener la version publicada sincronizada con el repositorio.
 
 ## Ejecucion local (XAMPP)
 
