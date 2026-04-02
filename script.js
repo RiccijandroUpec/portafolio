@@ -1,5 +1,5 @@
 const profileConfig = {
-  githubUser: "RiccijandroUpec",
+  githubUser: "riccijandro",
   name: "Riccijandro",
   email: "riccijandro.dev@gmail.com",
   fallbackMetrics: {
