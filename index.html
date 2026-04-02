@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio premium de Ingeniero en Computacion enfocado en software, sistemas operativos y open source."
+    />
+    <title>Ingeniero en Computacion | Portafolio Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="bg-glow bg-glow-one"></div>
+    <div class="bg-glow bg-glow-two"></div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home">
+          <span class="brand-dot"></span>
+          <span>Tu Nombre</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" id="mainNav">
+          <a href="#about">Sobre mi</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#opensource">Open Source</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Ingeniero en Computacion</p>
+            <h1>Construyo software robusto, elegante y con impacto real.</h1>
+            <p class="hero-text">
+              Especialista en desarrollo, sistemas operativos y arquitectura tecnica.
+              Me apasiona crear productos escalables y contribuir activamente al ecosistema open source.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">Ver proyectos</a>
+              <a class="btn btn-ghost" href="#contact">Hablemos</a>
+            </div>
+            <div class="stat-row">
+              <article>
+                <h3>+7</h3>
+                <p>anios creando software</p>
+              </article>
+              <article>
+                <h3>+40</h3>
+                <p>proyectos entregados</p>
+              </article>
+              <article>
+                <h3>100%</h3>
+                <p>enfoque open source</p>
+              </article>
+            </div>
+          </div>
+
+          <aside class="hero-card reveal delay-1">
+            <p class="card-kicker">Stack actual</p>
+            <ul>
+              <li>Backend: Node.js, Python, PHP, Go</li>
+              <li>Frontend: React, TypeScript, CSS avanzado</li>
+              <li>Sistemas: Linux, BSD, scripting y automatizacion</li>
+              <li>Infra: Docker, CI/CD, observabilidad</li>
+            </ul>
+            <div class="card-line"></div>
+            <p class="quote">
+              "La calidad no es accidental; es resultado de decisiones de ingenieria." 
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container section-grid">
+          <div class="section-head reveal">
+            <p class="eyebrow">Sobre mi</p>
+            <h2>Ingenieria con criterio de producto y mentalidad de sistema.</h2>
+          </div>
+          <div class="section-content reveal delay-1">
+            <p>
+              Soy ingeniero en computacion con enfoque integral: desarrollo de software,
+              analisis de rendimiento, seguridad y operaciones en entornos Linux.
+              Me gusta resolver problemas complejos con soluciones simples, mantenibles y medibles.
+            </p>
+            <p>
+              Trabajo bien desde la idea inicial hasta la puesta en produccion,
+              combinando excelencia tecnica con comunicacion clara para equipos y clientes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Skills</p>
+            <h2>Capacidades tecnicas de alto rendimiento.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <h3>Desarrollo de software</h3>
+              <p>Arquitectura limpia, APIs, pruebas, mantenibilidad y foco en performance.</p>
+            </article>
+            <article class="skill-card reveal delay-1">
+              <h3>Sistemas operativos</h3>
+              <p>Administracion Linux, tuning de sistema, shell scripting y troubleshooting.</p>
+            </article>
+            <article class="skill-card reveal delay-2">
+              <h3>Open source</h3>
+              <p>Contribuciones, documentacion, revision de PRs y colaboracion comunitaria.</p>
+            </article>
+            <article class="skill-card reveal">
+              <h3>DevOps practico</h3>
+              <p>Contenedores, pipelines CI/CD, despliegues confiables y monitoreo.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Proyectos</p>
+            <h2>Resultados concretos, tecnologia aplicada.</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <p class="project-tag">Plataforma SaaS</p>
+              <h3>Suite de gestion para operaciones</h3>
+              <p>
+                Plataforma con panel analitico, autenticacion robusta y procesos automatizados.
+              </p>
+              <a href="#">Caso de estudio</a>
+            </article>
+            <article class="project-card reveal delay-1">
+              <p class="project-tag">Infra y observabilidad</p>
+              <h3>Stack de monitoreo para produccion</h3>
+              <p>
+                Dashboards, alertas y trazabilidad completa para reducir incidentes criticos.
+              </p>
+              <a href="#">Ver detalles</a>
+            </article>
+            <article class="project-card reveal delay-2">
+              <p class="project-tag">Automatizacion</p>
+              <h3>Toolkit de scripting para equipos TI</h3>
+              <p>
+                Conjunto de scripts y utilidades para tareas repetitivas en entornos Linux.
+              </p>
+              <a href="#">Repositorio</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="opensource">
+        <div class="container open-source reveal">
+          <div>
+            <p class="eyebrow">Open Source</p>
+            <h2>Construir en publico. Aprender en comunidad.</h2>
+            <p>
+              Creo en compartir conocimiento: publico herramientas, mejoras y guias tecnicas
+              para que otras personas puedan construir mas rapido y mejor.
+            </p>
+          </div>
+          <div class="opensource-list">
+            <article>
+              <h3>Libreria CLI</h3>
+              <p>Automatizacion para flujos de desarrollo y mantenimiento.</p>
+            </article>
+            <article>
+              <h3>Plantillas de arquitectura</h3>
+              <p>Base para proyectos escalables con buenas practicas integradas.</p>
+            </article>
+            <article>
+              <h3>Documentacion tecnica</h3>
+              <p>Guias claras para deployment, seguridad y observabilidad.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact-wrap reveal">
+          <p class="eyebrow">Contacto</p>
+          <h2>Listo para crear algo grande juntos.</h2>
+          <p>
+            Escribeme para colaboraciones, consultoria o desarrollo de producto.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:tu@email.com">Enviar email</a>
+            <a class="btn btn-ghost" href="#">Descargar CV</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Tu Nombre. All rights reserved.</p>
+        <p>Hecho con enfoque en calidad, sistemas y open source.</p>
+      </div>
+    </footer>
+  </body>
+</html>
