@@ -25,6 +25,12 @@
         border-radius: 14px;
         padding: 1.4rem;
       }
+      .lead {
+        margin-top: 0.3rem;
+        margin-bottom: 1.1rem;
+        font-weight: 600;
+        color: #2d444c;
+      }
       h1, h2 {
         margin-top: 0;
       }
@@ -32,9 +38,36 @@
         font-size: 1.1rem;
         border-bottom: 1px solid var(--line);
         padding-bottom: 0.4rem;
+        margin-top: 1.2rem;
       }
       p, li {
         color: var(--muted);
+      }
+      ul {
+        margin-top: 0.55rem;
+      }
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem;
+      }
+      .chip {
+        border: 1px solid var(--line);
+        background: #f7fbfc;
+        color: #2f4b53;
+        border-radius: 999px;
+        padding: 0.28rem 0.62rem;
+        font-size: 0.88rem;
+      }
+      .project {
+        margin-bottom: 0.9rem;
+      }
+      .project h3 {
+        margin: 0;
+        font-size: 1rem;
+      }
+      .project p {
+        margin-top: 0.35rem;
       }
     </style>
   </head>
@@ -42,26 +75,82 @@
     <article class="cv">
       <h1>Riccijandro</h1>
       <p>Ingeniero en Computacion · Ibarra, Ecuador · riccijandro.dev@gmail.com</p>
+      <p class="lead">
+        Desarrollador de software con enfoque en ingenieria practica, mejora continua y cultura open source.
+      </p>
 
       <h2>Perfil</h2>
       <p>
-        Desarrollador de software con enfoque en arquitectura, sistemas operativos y mejora continua.
-        Apasionado por construir soluciones utiles y colaborar en open source.
+        Ingeniero en Computacion orientado a construir productos funcionales, mantenibles y con impacto real.
+        Combino desarrollo web, pensamiento de sistemas y disciplina tecnica para resolver problemas de negocio
+        con soluciones simples de operar y faciles de evolucionar.
+      </p>
+      <p>
+        Me motiva trabajar en equipos colaborativos, documentar buenas practicas y contribuir en proyectos
+        abiertos que ayuden a otras personas a aprender, desarrollar y escalar sus ideas.
       </p>
 
-      <h2>Competencias</h2>
+      <h2>Propuesta de Valor</h2>
       <ul>
-        <li>Desarrollo web con PHP, JavaScript, HTML y CSS</li>
-        <li>Sistemas operativos Linux y automatizacion con scripts</li>
-        <li>Git, GitHub y trabajo colaborativo</li>
+        <li>Traduzco necesidades reales en software claro, estable y escalable.</li>
+        <li>Trabajo de extremo a extremo: analisis, desarrollo, pruebas y entrega.</li>
+        <li>Aplico enfoque de sistemas operativos para mejorar rendimiento y confiabilidad.</li>
+        <li>Impulso cultura open source con aprendizaje continuo y colaboracion tecnica.</li>
       </ul>
 
-      <h2>Repositorios destacados</h2>
+      <h2>Competencias Tecnicas</h2>
       <ul>
-        <li>dietas-hospital</li>
-        <li>Turtles</li>
-        <li>recargas</li>
+        <li>Desarrollo web: PHP, JavaScript, HTML, CSS y arquitectura orientada a mantenimiento.</li>
+        <li>Bases de datos: modelado de informacion, consultas y organizacion de datos para aplicaciones web.</li>
+        <li>Sistemas operativos: Linux, linea de comandos, scripting y automatizacion de tareas.</li>
+        <li>Control de versiones: Git, GitHub, trabajo con ramas, pull requests y revision de cambios.</li>
+        <li>Calidad de software: depuracion, mejora incremental y estandarizacion de codigo legible.</li>
       </ul>
+
+      <div class="chips" aria-label="Tecnologias principales">
+        <span class="chip">PHP</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Python</span>
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">Git</span>
+        <span class="chip">Linux</span>
+      </div>
+
+      <h2>Proyectos Destacados</h2>
+      <section class="project">
+        <h3>dietas-hospital</h3>
+        <p>
+          Aplicacion web para registro y gestion de dietas hospitalarias. En este proyecto reforcé
+          organizacion de modulos, flujo de datos y usabilidad para un contexto sensible como salud.
+        </p>
+      </section>
+      <section class="project">
+        <h3>Turtles</h3>
+        <p>
+          Juego en Python enfocado en logica y estructura de programa. Proyecto clave para consolidar
+          fundamentos de programacion y pensamiento algorítmico.
+        </p>
+      </section>
+      <section class="project">
+        <h3>recargas</h3>
+        <p>
+          Sitio web orientado a negocio local. Aporte en maquetacion, estructura de contenidos y claridad
+          de interfaz para mejorar comunicacion con usuarios finales.
+        </p>
+      </section>
+
+      <h2>Open Source y Colaboracion</h2>
+      <p>
+        Mantengo repositorios publicos como parte de mi proceso de mejora profesional. Me interesa compartir
+        codigo util, documentar decisiones tecnicas y aportar a comunidades de desarrollo en crecimiento.
+      </p>
+
+      <h2>Objetivo Profesional</h2>
+      <p>
+        Integrarme en proyectos donde pueda aportar ingenieria de software solida, responsabilidad tecnica
+        y una actitud de aprendizaje permanente para construir soluciones de alto valor.
+      </p>
 
       <h2>Enlaces</h2>
       <ul>
