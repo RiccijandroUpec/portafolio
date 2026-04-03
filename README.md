@@ -85,6 +85,7 @@ Para envio de correos real en produccion, se recomienda integrar SMTP (por ejemp
 - Textos dinamicos y metricas: [script.js](script.js)
 - Experiencia y perfil extendido: [Riccijandro-CV.html](Riccijandro-CV.html)
 - Estilo visual: [styles.css](styles.css)
+- Descarga del CV en PDF: abre [Riccijandro-CV.html](Riccijandro-CV.html) y usa el boton "Descargar PDF"
 
 ## SEO
 

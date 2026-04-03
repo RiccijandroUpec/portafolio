@@ -202,6 +202,34 @@
         font-size: 0.92rem;
       }
 
+      .cv-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        margin-bottom: 1rem;
+      }
+
+      .action-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--line);
+        background: var(--surface);
+        color: var(--accent);
+        border-radius: 999px;
+        padding: 0.7rem 1rem;
+        text-decoration: none;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      @media print {
+        .cv-actions,
+        .footer-note {
+          display: none !important;
+        }
+      }
+
       @media (max-width: 860px) {
         .hero-grid,
         .sections,
@@ -232,8 +260,13 @@
   </head>
   <body>
     <main class="page">
+      <div class="cv-actions">
+        <button class="action-btn" id="downloadCv" type="button">Descargar PDF</button>
+        <button class="action-btn" id="printCv" type="button">Imprimir / Guardar PDF</button>
+      </div>
+
       <article class="card">
-        <header class="hero">
+        <header class="hero" id="cvContent">
           <div class="hero-grid">
             <div>
               <p class="eyebrow">Curriculum Vitae</p>
@@ -447,5 +480,32 @@
         </div>
       </article>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+      const downloadButton = document.getElementById('downloadCv');
+      const printButton = document.getElementById('printCv');
+      const cvContent = document.querySelector('.card');
+
+      if (downloadButton && cvContent && window.html2pdf) {
+        downloadButton.addEventListener('click', () => {
+          const options = {
+            margin: 8,
+            filename: 'CV-Richard-Stalyn-Rodriguez-Villarreal.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2, useCORS: true },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+          };
+
+          html2pdf().set(options).from(cvContent).save();
+        });
+      }
+
+      if (printButton) {
+        printButton.addEventListener('click', () => {
+          window.print();
+        });
+      }
+    </script>
   </body>
 </html>

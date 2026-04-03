@@ -24,7 +24,7 @@ const i18n = {
     "Especialista en desarrollo de software, sistemas operativos y arquitectura tecnica. Construyo soluciones mantenibles, escalables y listas para produccion.",
   heroCtaProjects: "Ver proyectos",
   heroCtaContact: "Hablemos",
-  heroCtaCv: "Ver CV",
+  heroCtaCv: "Descargar CV",
   metricRepos: "repositorios publicos",
   metricStars: "estrellas acumuladas",
   metricFollowers: "seguidores en GitHub",
