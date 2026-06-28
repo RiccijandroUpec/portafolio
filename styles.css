@@ -119,17 +119,6 @@ body {
   color: var(--text);
 }
 
-.lang-toggle {
-  border: 1px solid var(--line);
-  background: rgba(23, 55, 68, 0.4);
-  color: var(--text);
-  border-radius: 999px;
-  padding: 0.42rem 0.74rem;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 0.8rem;
-}
-
 .menu-toggle {
   display: none;
   border: 0;
@@ -382,6 +371,19 @@ h2 {
   text-underline-offset: 4px;
 }
 
+.project-private {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.reference-note {
+  margin-top: 1.2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .open-source {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -401,66 +403,6 @@ h2 {
   border-radius: 24px;
   text-align: center;
   padding: 2rem;
-}
-
-.contact-form {
-  max-width: 720px;
-  margin: 1.2rem auto 0;
-  text-align: left;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 0.85rem;
-}
-
-.contact-form span {
-  display: inline-block;
-  margin-bottom: 0.35rem;
-  color: var(--text);
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  border-radius: 12px;
-  border: 1px solid var(--line);
-  background: rgba(7, 15, 19, 0.58);
-  color: var(--text);
-  padding: 0.7rem 0.8rem;
-  font: inherit;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: 2px solid rgba(100, 194, 191, 0.3);
-  border-color: rgba(100, 194, 191, 0.55);
-}
-
-#company {
-  position: absolute;
-  left: -10000px;
-}
-
-.form-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.85rem;
-}
-
-.form-status {
-  min-height: 1.3rem;
-  margin-top: 0.9rem;
-  margin-bottom: 0;
-  font-weight: 600;
-}
-
-.form-status.ok {
-  color: var(--ok);
-}
-
-.form-status.error {
-  color: var(--danger);
 }
 
 .site-footer {
@@ -505,7 +447,6 @@ h2 {
   .timeline-grid,
   .info-grid,
   .reference-grid,
-  .form-grid,
   .stat-row {
     grid-template-columns: 1fr;
   }
