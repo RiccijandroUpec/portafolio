@@ -1,36 +1,46 @@
-# Portafolio Profesional - Richard Stalyn Rodriguez Villarreal
+# 💼 Portafolio Profesional - Richard Stalyn Rodriguez Villarreal
 
 Portafolio web desarrollado para presentar perfil profesional, experiencia laboral, habilidades técnicas y proyectos reales.
 
-## Versión publicada
+## 🚀 Versión publicada
 
 El portafolio está desplegado en Railway y disponible públicamente en:
 
-- https://riccijandro.cyrshop.app/ (dominio propio, requiere configurar el CNAME en el proveedor del dominio)
-- https://portafolio-production-0da0.up.railway.app/ (URL interna de Railway, sigue funcionando aunque uses el dominio propio)
+- 🌐 https://riccijandro.cyrshop.app/ (dominio propio, requiere configurar el CNAME en el proveedor del dominio)
+- 🛤️ https://portafolio-production-0da0.up.railway.app/ (URL interna de Railway, sigue funcionando aunque uses el dominio propio)
 
 También puedes usar este repositorio como base local para desarrollo y actualizaciones.
 
-## Descripción
+## 📝 Descripción
 
 Este proyecto muestra la marca personal de Richard Stalyn Rodriguez Villarreal, Ingeniero en Computación, con enfoque en:
 
-- Desarrollo de software (Laravel, Node.js)
-- Automatización de procesos con IA (Playwright + Gemini/DeepSeek)
-- Sistemas operativos y administración de redes
-- Cultura de código abierto
-- Docencia y experiencia actual en Hospital San Vicente de Paul (Ibarra, Ecuador)
+- 💻 Desarrollo de software (Laravel, Node.js)
+- 🤖 Automatización de procesos con IA (Playwright + Gemini/DeepSeek)
+- 🖥️ Sistemas operativos y administración de redes
+- 🌍 Cultura de código abierto
+- 🏥 Docencia y experiencia actual en Hospital San Vicente de Paul (Ibarra, Ecuador)
 
-## Características principales
+## ✨ Características principales
 
-- Diseño adaptable a móvil
-- Contenido en español
-- Secciones profesionales completas (perfil, habilidades, proyectos, contacto)
-- Métricas de GitHub obtenidas en vivo desde la API pública
-- Contacto directo por WhatsApp (sin backend ni configuración de email)
-- SEO técnico completo (Open Graph, Twitter Cards, JSON-LD, robots, sitemap, manifest)
+- 📱 Diseño adaptable a móvil
+- 🇪🇸 Contenido en español
+- 🧩 Secciones profesionales completas (perfil, habilidades, proyectos, contacto)
+- 📊 Métricas de GitHub obtenidas en vivo desde la API pública
+- 💬 Contacto directo por WhatsApp (sin backend ni configuración de email)
+- 🔍 SEO técnico completo (Open Graph, Twitter Cards, JSON-LD, robots, sitemap, manifest)
 
-## Estructura del proyecto
+## 🛠️ Tecnologías utilizadas
+
+- 🟧 **HTML5** — estructura semántica del sitio
+- 🎨 **CSS3** — estilos visuales y diseño responsivo
+- 💛 **JavaScript** — interactividad y consumo de la API de GitHub
+- 🐙 **GitHub REST API** — métricas en vivo (repos, commits, lenguaje principal)
+- 🔤 **Google Fonts** — tipografías Outfit y Playfair Display
+- 🏷️ **Schema.org / JSON-LD** — datos estructurados para SEO
+- 🚂 **Railway** — despliegue y hosting
+
+## 📂 Estructura del proyecto
 
 - [index.html](index.html): página principal del portafolio
 - [styles.css](styles.css): estilos visuales
@@ -42,20 +52,20 @@ Este proyecto muestra la marca personal de Richard Stalyn Rodriguez Villarreal, 
 - [sitemap.xml](sitemap.xml): mapa del sitio
 - [site.webmanifest](site.webmanifest): manifest para instalación web
 
-## Requisitos
+## ✅ Requisitos
 
-- Servidor local (XAMPP en este caso) o cualquier servidor estático
-- Conexión a internet para obtener métricas de GitHub
+- 🖥️ Servidor local (XAMPP en este caso) o cualquier servidor estático
+- 🌐 Conexión a internet para obtener métricas de GitHub
 
-## Despliegue
+## 📦 Despliegue
 
 La versión pública del sitio está alojada en Railway:
 
-- [Portafolio en Railway](https://portafolio-production-0da0.up.railway.app/)
+- 🚂 [Portafolio en Railway](https://portafolio-production-0da0.up.railway.app/)
 
 Si realizas cambios, recuerda actualizar el despliegue para mantener la versión publicada sincronizada con el repositorio.
 
-## Ejecución local (XAMPP)
+## 🧪 Ejecución local (XAMPP)
 
 1. Clona o coloca la carpeta del proyecto en:
    - `C:/xampp/htdocs/portafolio`
@@ -63,30 +73,30 @@ Si realizas cambios, recuerda actualizar el despliegue para mantener la versión
 3. Abre en el navegador:
    - `http://localhost/portafolio/`
 
-## Contacto
+## 📬 Contacto
 
 El botón principal de la sección de contacto abre WhatsApp directamente (`wa.me/593983185069`) con un mensaje
 precargado. No depende de ningún backend, API key ni configuración de correo — funciona igual en local que en
 producción. El número y el texto del mensaje se editan directamente en el enlace dentro de [index.html](index.html).
 
-## Personalización rápida
+## ⚙️ Personalización rápida
 
-- Datos personales y textos: [index.html](index.html)
-- Métricas dinámicas de GitHub: [script.js](script.js)
-- Experiencia y perfil extendido: [Riccijandro-CV.html](Riccijandro-CV.html)
-- Estilo visual: [styles.css](styles.css)
-- Descarga del CV en PDF: abre [Riccijandro-CV.html](Riccijandro-CV.html) y usa el botón "Descargar PDF"
+- 👤 Datos personales y textos: [index.html](index.html)
+- 📊 Métricas dinámicas de GitHub: [script.js](script.js)
+- 📄 Experiencia y perfil extendido: [Riccijandro-CV.html](Riccijandro-CV.html)
+- 🎨 Estilo visual: [styles.css](styles.css)
+- ⬇️ Descarga del CV en PDF: abre [Riccijandro-CV.html](Riccijandro-CV.html) y usa el botón "Descargar PDF"
 
-## SEO
+## 🔍 SEO
 
 El proyecto ya incluye:
 
-- Meta description y keywords
-- Open Graph y Twitter Card
-- Schema.org (Person)
-- Canonical apuntando al dominio real de producción (Railway)
-- robots.txt
-- sitemap.xml
+- 🏷️ Meta description y keywords
+- 📣 Open Graph y Twitter Card
+- 🧱 Schema.org (Person)
+- 🔗 Canonical apuntando al dominio real de producción (Railway)
+- 🤖 robots.txt
+- 🗺️ sitemap.xml
 
 Si en el futuro migras a un dominio propio, actualiza la URL en:
 
@@ -94,6 +104,6 @@ Si en el futuro migras a un dominio propio, actualiza la URL en:
 - [robots.txt](robots.txt)
 - [sitemap.xml](sitemap.xml)
 
-## Licencia
+## 📄 Licencia
 
 Uso personal/profesional de portafolio.
