@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV | Richard Stalyn Rodriguez Villarreal</title>
-    <meta name="description" content="Curriculum vitae de Richard Stalyn Rodriguez Villarreal, Ingeniero en Computación con experiencia en desarrollo de software, automatización con IA, docencia y soporte técnico." />
+    <title>CV | Richard Stalyn Rodriguez Villarreal - Docente de Tecnología</title>
+    <meta name="description" content="Curriculum vitae de Richard Stalyn Rodriguez Villarreal, Ingeniero en Ciencias de la Computación y Docente de Tecnología, con experiencia docente en instituciones públicas, desarrollo de software, redes y promoción del software libre en el aula." />
     <style>
       :root {
         --bg: #eef4f6;
@@ -41,10 +41,131 @@
         border: 1px solid var(--line);
         border-radius: 18px;
         box-shadow: 0 18px 40px rgba(16, 33, 39, 0.08);
-        overflow: hidden;
-      }
+          body {
+            background: #fff;
+            overflow: visible;
+            font-size: 0.96rem;
+            line-height: 1.28;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+          }
 
-      .hero {
+          .cv-actions,
+          .footer-note {
+            display: none !important;
+          }
+
+          .page {
+            width: 100%;
+            margin: 0;
+          }
+
+          .card {
+            box-shadow: none;
+            border-radius: 0;
+          }
+
+          .hero {
+            padding: 0.8rem 0.9rem;
+          }
+
+          .hero-grid,
+          .split,
+          .references,
+          .timeline {
+            break-inside: avoid;
+            page-break-inside: avoid;
+          }
+
+          .hero-grid {
+            gap: 0.75rem;
+          }
+
+          h1 {
+            font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+          }
+
+          .subtitle {
+            margin-top: 0.45rem;
+            font-size: 0.84rem;
+            line-height: 1.3;
+          }
+
+          .cv-avatar {
+            width: 56px;
+            height: 56px;
+            margin-bottom: 0.45rem;
+          }
+
+          .sections {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.45rem;
+            padding: 0.45rem;
+          }
+
+          .full {
+            grid-column: auto;
+          }
+
+          .section {
+            padding: 0.58rem 0.65rem;
+            border-radius: 10px;
+            break-inside: avoid;
+            page-break-inside: avoid;
+          }
+
+          .item,
+          .ref,
+          .contact-box {
+            break-inside: avoid;
+            page-break-inside: avoid;
+          }
+
+          .item {
+            padding: 0.64rem;
+            border-radius: 10px;
+          }
+
+          .ref {
+            padding: 0.62rem;
+          }
+
+          .tag {
+            padding: 0.2rem 0.52rem;
+            font-size: 0.76rem;
+          }
+
+          .contact-list li,
+          .bullet-list li,
+          p {
+            line-height: 1.28;
+            margin-top: 0.1rem;
+            margin-bottom: 0.1rem;
+          }
+
+          .section h2,
+          .item h3,
+          .ref h3,
+          .contact-box h2 {
+            margin-bottom: 0.4rem;
+          }
+
+          .section:nth-of-type(5),
+          .section:nth-of-type(7),
+          .section:nth-of-type(9),
+          .section:nth-of-type(12) {
+            display: none !important;
+          }
+
+          .section:nth-of-type(2) .bullet-list li:nth-of-type(n + 5),
+          .section:nth-of-type(4) .split:last-of-type,
+          .section:nth-of-type(6) .bullet-list li:nth-of-type(n + 3),
+          .section:nth-of-type(10) .tag-row:nth-of-type(3),
+          .section:nth-of-type(6) .timeline .item:nth-of-type(n + 3),
+          .section:nth-of-type(8) .item:nth-of-type(n + 2) {
+            display: none !important;
+          }
         padding: 1.6rem;
         background: linear-gradient(135deg, #0f2630 0%, #11384a 100%);
         color: #eef7f9;
@@ -233,10 +354,352 @@
         cursor: pointer;
       }
 
+      body.pdf-export {
+        background: #fff;
+        overflow: visible;
+        color: #1d2428;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 0.95rem;
+        line-height: 1.28;
+      }
+
+      body.pdf-export {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      @page {
+        size: A4 portrait;
+        margin: 4mm;
+      }
+
+      body.pdf-export .page {
+        width: 100%;
+        margin: 0;
+      }
+
+      body.pdf-export .card {
+        box-shadow: none;
+        border-radius: 0;
+        border: 1px solid #d8e1e7;
+      }
+
+      body.pdf-export .hero {
+        padding: 1rem 1.1rem;
+        background: linear-gradient(135deg, #102a43 0%, #173d5a 100%);
+        color: #f7fbfd;
+        border-bottom: 1px solid #10273a;
+      }
+
+      body.pdf-export .hero-grid,
+      body.pdf-export .split,
+      body.pdf-export .references,
+      body.pdf-export .timeline {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      body.pdf-export .hero-grid {
+        gap: 0.9rem;
+      }
+
+      body.pdf-export h1 {
+        font-size: clamp(1.55rem, 2.8vw, 2.2rem);
+        color: #ffffff;
+        letter-spacing: -0.4px;
+      }
+
+      body.pdf-export .eyebrow {
+        display: inline-block;
+        padding: 0.28rem 0.6rem;
+        margin-bottom: 0.65rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.12);
+        color: #ffffff;
+        letter-spacing: 0.8px;
+        line-height: 1.35;
+        font-size: 0.74rem;
+        font-weight: 700;
+      }
+
+      body.pdf-export .subtitle {
+        margin-top: 0.5rem;
+        font-size: 0.85rem;
+        line-height: 1.35;
+        color: #d6e1e8;
+        text-align: justify;
+      }
+
+      body.pdf-export .cv-avatar {
+        width: 58px;
+        height: 58px;
+        margin-bottom: 0.5rem;
+        border-color: #f0c36a;
+      }
+
+      body.pdf-export .sections {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.55rem;
+        padding: 0.6rem;
+        background: #ffffff;
+      }
+
+      body.pdf-export .full {
+        grid-column: auto;
+      }
+
+      body.pdf-export .section {
+        padding: 0.68rem 0.72rem;
+        border-radius: 10px;
+        break-inside: avoid;
+        page-break-inside: avoid;
+        background: #ffffff;
+        border-color: #dbe3e8;
+      }
+
+      body.pdf-export .item,
+      body.pdf-export .ref,
+      body.pdf-export .contact-box {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        background: #fbfcfd;
+        border-color: #dfe6ea;
+      }
+
+      body.pdf-export .item {
+        padding: 0.68rem;
+        border-radius: 10px;
+      }
+
+      body.pdf-export .ref {
+        padding: 0.68rem;
+      }
+
+      body.pdf-export .tag {
+        padding: 0.22rem 0.58rem;
+        font-size: 0.76rem;
+        background: #f2f6f8;
+        color: #20323b;
+        border-color: #d7dfe4;
+      }
+
+      body.pdf-export .contact-list li,
+      body.pdf-export .bullet-list li,
+      body.pdf-export p {
+        line-height: 1.28;
+        margin-top: 0.1rem;
+        margin-bottom: 0.1rem;
+        color: #38474f;
+        text-align: justify;
+      }
+
+      body.pdf-export .section h2,
+      body.pdf-export .item h3,
+      body.pdf-export .ref h3,
+      body.pdf-export .contact-box h2 {
+        margin-bottom: 0.4rem;
+        color: #17384d;
+        border-bottom-color: #dbe3e8;
+      }
+
+      body.pdf-export .meta {
+        color: #0f5b78;
+      }
+
+      body.pdf-export .section:nth-of-type(5),
+      body.pdf-export .section:nth-of-type(7),
+      body.pdf-export .section:nth-of-type(9),
+      body.pdf-export .section:nth-of-type(10),
+      body.pdf-export .section:nth-of-type(12) {
+        display: none !important;
+      }
+
+      body.pdf-export .section:nth-of-type(2) .bullet-list li:nth-of-type(n + 5),
+      body.pdf-export .section:nth-of-type(4) .split:last-of-type,
+      body.pdf-export .section:nth-of-type(6) .bullet-list li:nth-of-type(n + 3),
+      body.pdf-export .section:nth-of-type(9) .item:nth-of-type(n + 5),
+      body.pdf-export .section:nth-of-type(10) .tag-row:nth-of-type(3) {
+        display: none !important;
+      }
+
+      body.pdf-export .section:nth-of-type(4) {
+        display: none !important;
+      }
+
+      body.pdf-export .section:nth-of-type(6) .timeline .item:nth-of-type(n + 3),
+      body.pdf-export .section:nth-of-type(8) .item:nth-of-type(n + 2) {
+        display: none !important;
+      }
+
+      body.pdf-export .cv-actions,
+      body.pdf-export .footer-note {
+        display: none !important;
+      }
+
+      body.pdf-export .pdf-hide {
+        display: none !important;
+      }
+
       @media print {
+        body {
+          background: #fff;
+          overflow: visible;
+          color: #1d2428;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 0.96rem;
+          line-height: 1.28;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+
         .cv-actions,
         .footer-note {
           display: none !important;
+        }
+
+        .page {
+          width: 100%;
+          margin: 0;
+        }
+
+        .card {
+          box-shadow: none;
+          border-radius: 0;
+        }
+
+        .hero {
+          padding: 0.8rem 0.9rem;
+          background: #f4f7f8;
+          color: #1d2428;
+          border-bottom: 1px solid #d2dbe0;
+        }
+
+        .hero-grid,
+        .split,
+        .references,
+        .timeline {
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
+
+        .hero-grid {
+          gap: 0.75rem;
+        }
+
+        h1 {
+          font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+        }
+
+        .eyebrow,
+        .meta,
+        .section h2,
+        .item h3,
+        .ref h3,
+        .contact-box h2 {
+          color: #163544;
+        }
+
+        .subtitle {
+          margin-top: 0.45rem;
+          font-size: 0.84rem;
+          line-height: 1.3;
+          color: #36464d;
+        }
+
+        .cv-avatar {
+          width: 56px;
+          height: 56px;
+          margin-bottom: 0.45rem;
+        }
+
+        .sections {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 0.45rem;
+          padding: 0.45rem;
+        }
+
+        .full {
+          grid-column: auto;
+        }
+
+        .section {
+          padding: 0.58rem 0.65rem;
+          border-radius: 10px;
+          break-inside: avoid;
+          page-break-inside: avoid;
+          background: #fff;
+          border-color: #d7dfe4;
+        }
+
+        .item,
+        .ref,
+        .contact-box {
+          break-inside: avoid;
+          page-break-inside: avoid;
+          background: #fff;
+          border-color: #d7dfe4;
+        }
+
+        .item {
+          padding: 0.64rem;
+          border-radius: 10px;
+        }
+
+        .ref {
+          padding: 0.62rem;
+        }
+
+        .tag {
+          padding: 0.2rem 0.52rem;
+          font-size: 0.76rem;
+          background: #f4f7f8;
+          color: #20323b;
+          border-color: #d7dfe4;
+        }
+
+        .contact-list li,
+        .bullet-list li,
+        p {
+          line-height: 1.28;
+          margin-top: 0.1rem;
+          margin-bottom: 0.1rem;
+        }
+
+        .section h2,
+        .item h3,
+        .ref h3,
+        .contact-box h2 {
+          margin-bottom: 0.4rem;
+          border-bottom-color: #d7dfe4;
+        }
+
+        .section:nth-of-type(5),
+        .section:nth-of-type(7),
+        .section:nth-of-type(9),
+        .section:nth-of-type(12) {
+          display: none !important;
+        }
+
+        .section:nth-of-type(4) {
+          display: none !important;
+        }
+
+        .section:nth-of-type(2) .bullet-list li:nth-of-type(n + 5),
+        .section:nth-of-type(4) .split:last-of-type,
+        .section:nth-of-type(6) .bullet-list li:nth-of-type(n + 3),
+        .section:nth-of-type(10) .tag-row:nth-of-type(3),
+        .section:nth-of-type(6) .timeline .item:nth-of-type(n + 3),
+        .section:nth-of-type(8) .item:nth-of-type(n + 2) {
+          display: none !important;
+        }
+
+        .card,
+        .section,
+        .item,
+        .ref {
+          box-shadow: none;
         }
       }
 
@@ -271,7 +734,7 @@
   <body>
     <main class="page">
       <div class="cv-actions">
-        <button class="action-btn" id="downloadCv" type="button">Descargar PDF</button>
+        <a class="action-btn" id="downloadCv" href="Riccijandro-CV.pdf" download="Riccijandro-CV.pdf">Descargar PDF</a>
         <button class="action-btn" id="printCv" type="button">Imprimir / Guardar PDF</button>
       </div>
 
@@ -279,12 +742,15 @@
         <header class="hero" id="cvContent">
           <div class="hero-grid">
             <div>
-              <p class="eyebrow">Curriculum Vitae</p>
+              <p class="eyebrow">Docente de Tecnología · Ingeniero en Ciencias de la Computación · Open Source Advocate</p>
               <h1>Richard Stalyn Rodriguez Villarreal</h1>
               <p class="subtitle">
-                Ingeniero en Computación con experiencia en desarrollo de software, automatización con IA, docencia,
-                soporte técnico, sistemas operativos y gestión de procesos. Mi trayectoria me ha llevado a brindar
-                un excelente servicio y a mejorar resultados junto a organizaciones con objetivos claros y ambiciosos.
+                Ingeniero en Ciencias de la Computación con sólida experiencia docente en instituciones públicas,
+                dominio técnico en desarrollo de software, redes y ciberseguridad, y fuerte vocación pedagógica.
+                Impulsor activo del movimiento Open Source y de la adopción de herramientas tecnológicas en el aula
+                — GitHub, GitHub Copilot, VS Code, Linux y ecosistemas libres — como recursos didácticos que preparan
+                a los estudiantes para el mercado tecnológico real. Comprometido con una educación técnica de calidad,
+                práctica y orientada a proyectos.
               </p>
             </div>
             <aside class="contact-box">
@@ -302,159 +768,261 @@
 
         <section class="sections">
           <section class="section full">
-            <h2>Perfil Profesional</h2>
+            <h2>Perfil Docente</h2>
             <p>
-              Profesional con formación en Ingeniería en Computación, orientado a la solución de problemas, la mejora
-              continua y la creación de herramientas útiles para entornos educativos, técnicos, administrativos y de servicio.
-              Destaco por la facilidad para aprender, adaptarme a distintos entornos laborales, organizar tareas y trabajar bajo presión.
-            </p>
-            <p>
-              Tengo interés en proyectos donde pueda aportar desarrollo web con PHP, Laravel y automatización con IA,
-              soporte técnico, análisis de procesos, docencia y gestión de herramientas digitales. Me defino por la
-              responsabilidad, la comunicación clara y el trabajo en equipo.
+              Ingeniero en Ciencias de la Computación con sólida experiencia docente en instituciones públicas, dominio
+              técnico en desarrollo de software, redes y ciberseguridad, y fuerte vocación pedagógica. Impulsor activo
+              del movimiento Open Source y de la adopción de herramientas tecnológicas en el aula — GitHub, GitHub
+              Copilot, VS Code, Linux y ecosistemas libres — como recursos didácticos que preparan a los estudiantes
+              para el mercado tecnológico real. Comprometido con una educación técnica de calidad, práctica y
+              orientada a proyectos.
             </p>
           </section>
 
           <section class="section">
-            <h2>Aptitudes</h2>
+            <h2>Aptitudes y Competencias Blandas</h2>
             <ul class="bullet-list">
-              <li>Predisposición para aprender y brindar conocimientos.</li>
-              <li>Conocimiento de herramientas tecnológicas para organización y planificación.</li>
-              <li>Capacidad para trabajar en equipo.</li>
-              <li>Manejo de programas utilitarios.</li>
-              <li>Manejo de redes sociales.</li>
-              <li>Superación diaria.</li>
-              <li>Trabajo bajo presión.</li>
+              <li>Pensamiento computacional y resolución de problemas.</li>
+              <li>Liderazgo de equipos y proyectos colaborativos.</li>
+              <li>Adaptabilidad a nuevos entornos y tecnologías.</li>
+              <li>Trabajo bajo presión con enfoque en resultados.</li>
+              <li>Comunicación técnica clara para audiencias diversas.</li>
+              <li>Diseño de experiencias de aprendizaje activo.</li>
+              <li>Mentoría y acompañamiento estudiantil.</li>
+              <li>Ética profesional y compromiso con la mejora continua.</li>
             </ul>
           </section>
 
           <section class="section">
             <h2>Idiomas</h2>
             <div class="tag-row">
-              <span class="tag">Inglés: 85%</span>
               <span class="tag">Español: Nativo</span>
+              <span class="tag">Inglés: B2 (Certificado UPEC, 2018)</span>
             </div>
+            <p class="small" style="margin-top: 0.6rem;">Nivel Intermedio-alto — lectura técnica de documentación, código y estándares internacionales.</p>
           </section>
 
           <section class="section full">
-            <h2>Educación</h2>
-            <div class="timeline">
+            <h2>Competencias Técnicas para la Docencia</h2>
+            <div class="split">
               <div class="item">
-                <h3>Universidad Politécnica Estatal del Carchi</h3>
-                <p class="meta">Ingeniero en Computación</p>
-                <p class="small">Formación profesional en desarrollo de software, sistemas, tecnología y resolución de problemas.</p>
-              </div>
-              <div class="item">
-                <h3>Colegio</h3>
-                <p class="meta">Bachillerato General Unificado</p>
-              </div>
-              <div class="item">
-                <h3>Escuela</h3>
-                <p class="meta">Abdón Calderón</p>
-              </div>
-            </div>
-          </section>
-
-          <section class="section full">
-            <h2>Experiencia Profesional</h2>
-            <div class="timeline">
-              <div class="item">
-                <h3>Hospital San Vicente de Paul - Ibarra, Ecuador</h3>
-                <p class="meta">Actual</p>
-                <p>
-                  Participación en actividades técnicas y de apoyo orientadas a mantener la continuidad operativa,
-                  la atención efectiva y la mejora de herramientas utilizadas por los equipos de trabajo.
-                </p>
-              </div>
-              <div class="item">
-                <h3>Docente - UE San Pedro Pascual</h3>
-                <p class="meta">Computación y Emprendimiento y Gestión</p>
-                <p>
-                  Impartición de clases, orientación a estudiantes y desarrollo de contenidos académicos con enfoque práctico.
-                </p>
-              </div>
-              <div class="item">
-                <h3>Pasante - Universidad UPEC</h3>
-                <p class="meta">Soporte técnico, redes y mantenimiento</p>
+                <h3>Lenguajes &amp; Desarrollo</h3>
                 <ul class="bullet-list">
-                  <li>Diagnóstico y resolución de problemas técnicos.</li>
-                  <li>Mantenimiento preventivo, respaldo y recuperación de datos.</li>
-                  <li>Administración de redes y ciberseguridad básica.</li>
-                  <li>Instalación de software y hardware.</li>
-                  <li>Colaboración en equipos de trabajo.</li>
+                  <li>Python · PHP · JavaScript · Visual Basic .NET</li>
+                  <li>SQL Server · MySQL · Bases de datos relacionales</li>
+                  <li>HTML5 · CSS3 · Desarrollo web</li>
+                  <li>Facturación Electrónica — UBL 2.1 (VB.NET)</li>
+                  <li>Estructuras de datos y algoritmos</li>
                 </ul>
               </div>
               <div class="item">
-                <h3>Asistente de Gerencia - Avena Polaca</h3>
-                <p class="meta">Seguimiento de agenda y control documental</p>
-                <p>
-                  Seguimiento de agenda, revisión de idoneidad de documentos, control de archivo y creación de presentaciones mensuales.
-                </p>
-              </div>
-              <div class="item">
-                <h3>Distribuidor - Avena Polaca</h3>
-                <p class="meta">Atención y asesoría comercial</p>
-                <p>
-                  Recepción y atención de clientes, planificación y toma de decisiones, asesoramiento de compras.
-                </p>
-              </div>
-              <div class="item">
-                <h3>Mercaderista - La Favorita (Supermaxi) Tulcán</h3>
-                <p class="meta">Atención al cliente, caja, organización e inventario</p>
+                <h3>Herramientas de Desarrollo</h3>
                 <ul class="bullet-list">
-                  <li>Atención amable y servicial a clientes.</li>
-                  <li>Manejo de caja, transacciones, devoluciones y control de efectivo.</li>
-                  <li>Organización de productos, etiquetado, precios e inventario.</li>
-                  <li>Empaquetado, higiene, seguridad y resolución de problemas.</li>
-                  <li>Trabajo en equipo, manejo de multitudes y profesionalismo.</li>
+                  <li>Git &amp; GitHub — control de versiones y colaboración</li>
+                  <li>GitHub Copilot — programación asistida por IA</li>
+                  <li>GitHub Classroom — gestión de prácticas y proyectos</li>
+                  <li>Visual Studio Code · Visual Studio Community</li>
+                  <li>GitHub Actions (CI/CD básico)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="split" style="margin-top: 1rem;">
+              <div class="item">
+                <h3>Sistemas &amp; Redes</h3>
+                <ul class="bullet-list">
+                  <li>Linux (Ubuntu, Debian) — administración y uso didáctico</li>
+                  <li>Redes LAN/WAN · TCP/IP · DNS · DHCP · VLANs</li>
+                  <li>Ciberseguridad básica — políticas de acceso y privacidad</li>
+                  <li>Virtualización: VirtualBox / VMware</li>
+                  <li>Mantenimiento preventivo y correctivo de hardware</li>
                 </ul>
               </div>
               <div class="item">
-                <h3>Bodeguero - ASOALIMJENNJORD</h3>
-                <p class="meta">Junio - diciembre 2024</p>
-                <p>
-                  Gestión y organización de bodegas y almacenes, recepción, almacenamiento y despacho de mercancías,
-                  con control de inventarios, cumplimiento de normas de seguridad e higiene y apoyo en la rotación de productos.
-                </p>
+                <h3>Herramientas Pedagógicas Digitales</h3>
+                <ul class="bullet-list">
+                  <li>Google Classroom · Google Workspace for Education</li>
+                  <li>Moodle (LMS open source) — gestión de cursos</li>
+                  <li>Scratch · App Inventor — programación visual</li>
+                  <li>Canva · Genially — contenido educativo visual</li>
+                  <li>ChatGPT / Claude — uso ético de IA en educación</li>
+                </ul>
               </div>
             </div>
           </section>
 
           <section class="section full">
-            <h2>Competencias Técnicas</h2>
+            <h2>Filosofía Open Source &amp; Tecnología Libre</h2>
+            <p>
+              Defensor activo del software libre y la tecnología abierta como pilares de una educación tecnológica
+              accesible, colaborativa y de calidad:
+            </p>
+            <ul class="bullet-list">
+              <li><strong>GitHub como aula colaborativa:</strong> uso de repositorios, pull requests y revisión de código como metodología pedagógica activa.</li>
+              <li><strong>Linux en el aula:</strong> promoción de sistemas operativos libres (Ubuntu, Raspberry Pi OS) para entornos educativos sin costos de licencia.</li>
+              <li><strong>GitHub Copilot &amp; IA generativa:</strong> integración ética en la enseñanza de programación para acelerar el aprendizaje y fomentar el pensamiento crítico.</li>
+              <li><strong>Contribución a proyectos abiertos:</strong> motivación a los estudiantes a colaborar en proyectos reales de la comunidad open source.</li>
+              <li><strong>Herramientas libres en el stack educativo:</strong> VS Code, LibreOffice, GIMP, Blender, Arduino IDE, Jupyter Notebook como alternativas gratuitas y potentes.</li>
+              <li><strong>Cultura DevOps básica:</strong> introducción a flujos de trabajo con Git, versionado de código y documentación técnica (Markdown, README).</li>
+            </ul>
+          </section>
+
+          <section class="section full">
+            <h2>Experiencia Docente</h2>
+            <div class="timeline">
+              <div class="item">
+                <h3>Docente de Reemplazo — Matemática Superior y Básica</h3>
+                <p class="meta">Unidad Educativa Pablo Muñoz Vega · Período de reemplazo</p>
+                <ul class="bullet-list">
+                  <li><strong>Planificación curricular:</strong> diseño de clases y evaluaciones alineadas al currículo nacional del Ministerio de Educación.</li>
+                  <li><strong>Metodología activa:</strong> uso de GeoGebra (open source) y hojas de cálculo para visualización y resolución de problemas matemáticos.</li>
+                  <li><strong>Seguimiento académico:</strong> análisis de rendimiento por estudiante y estrategias de refuerzo personalizadas.</li>
+                  <li><strong>Gestión de aula:</strong> mantenimiento de clima positivo, disciplina y motivación en grupos heterogéneos.</li>
+                </ul>
+              </div>
+              <div class="item">
+                <h3>Docente — Computación y Emprendimiento &amp; Gestión</h3>
+                <p class="meta">Unidad Educativa San Pedro Pascual · Período docente</p>
+                <ul class="bullet-list">
+                  <li><strong>Computación aplicada:</strong> ofimática avanzada, introducción a la programación, seguridad digital y uso responsable de internet.</li>
+                  <li><strong>Programación con herramientas abiertas:</strong> enseñanza de lógica de programación usando Scratch, Python y GitHub para el control de versiones de proyectos estudiantiles.</li>
+                  <li><strong>Emprendimiento tecnológico:</strong> desarrollo de planes de negocio digitales, uso de redes sociales con propósito comercial y pensamiento innovador.</li>
+                  <li><strong>Google Classroom:</strong> gestión completa del aula virtual: tareas, retroalimentación y evaluaciones en línea.</li>
+                  <li><strong>Impacto medible:</strong> incremento en el interés por la programación y tecnología mediante proyectos prácticos orientados a la solución de problemas reales.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="section full">
+            <h2>Experiencia Profesional Complementaria</h2>
+            <div class="timeline">
+              <div class="item">
+                <h3>Pasante — Departamento de TICs</h3>
+                <p class="meta">Universidad Politécnica Estatal del Carchi (UPEC) · Pasantías universitarias</p>
+                <ul class="bullet-list">
+                  <li><strong>Soporte técnico:</strong> diagnóstico y resolución de fallas en hardware/software, mantenimiento preventivo y recuperación de datos (Clonezilla, Acronis).</li>
+                  <li><strong>Administración de redes:</strong> configuración de switches, routers, DHCP, DNS y VLANs en entorno institucional.</li>
+                  <li><strong>Ciberseguridad:</strong> implementación de políticas de usuarios, contraseñas y antivirus en laboratorios universitarios.</li>
+                  <li><strong>Documentación técnica:</strong> elaboración de manuales de procesos y reportes de soporte en formato digital.</li>
+                </ul>
+              </div>
+              <div class="item">
+                <h3>Asistente de Gerencia</h3>
+                <p class="meta">Avena Polaca · Período de gestión</p>
+                <ul class="bullet-list">
+                  <li><strong>Automatización administrativa:</strong> creación de reportes y presentaciones ejecutivas con herramientas ofimáticas avanzadas.</li>
+                  <li><strong>Gestión documental digital:</strong> control y archivo de documentos contractuales en sistemas digitales.</li>
+                </ul>
+              </div>
+              <div class="item">
+                <h3>Bodeguero — Gestión de Almacén</h3>
+                <p class="meta">ASOALIMJENNJORD · Junio – Diciembre 2024</p>
+                <ul class="bullet-list">
+                  <li><strong>Control de inventarios:</strong> uso de sistemas de trazabilidad y metodología FIFO/FEFO para rotación de productos.</li>
+                  <li><strong>Logística y despacho:</strong> coordinación con proveedores y reportes de indicadores de gestión.</li>
+                </ul>
+              </div>
+              <div class="item">
+                <h3>Auxiliar de Almacén / Mercaderista</h3>
+                <p class="meta">Corporación Favorita — Supermaxi Tulcán · Nov. 2022 – Ene. 2023</p>
+                <ul class="bullet-list">
+                  <li><strong>Certificación interna:</strong> Curso de Administración, BPA y Mejora Continua (Corporación Favorita).</li>
+                  <li><strong>Gestión operativa:</strong> manejo de inventario, caja registradora y atención al cliente en sala de ventas.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="section full">
+            <h2>Formación Académica</h2>
+            <div class="timeline">
+              <div class="item">
+                <h3>Ingeniero en Ciencias de la Computación</h3>
+                <p class="meta">Universidad Politécnica Estatal del Carchi (UPEC)</p>
+                <p class="small">Título registrado SNIESE · 2 dic. 2025 · Reg. N.° 1074-2025-3258551 · Campo: TIC</p>
+              </div>
+              <div class="item">
+                <h3>Bachillerato General Unificado</h3>
+                <p class="meta">Colegio — Escuela Abdón Calderón</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section full pdf-hide">
+            <h2>Cursos y Certificaciones</h2>
+            <div class="timeline">
+              <div class="item">
+                <h3>Facturación Electrónica en Visual Basic .NET (UBL 2.1)</h3>
+                <p class="meta">Udemy</p>
+                <p>Programación de comprobantes electrónicos conforme estándar UBL 2.1. Ene. 2021.</p>
+              </div>
+              <div class="item">
+                <h3>Sistema de Ventas con VB.NET y SQL Server</h3>
+                <p class="meta">Udemy</p>
+                <p>Desarrollo de aplicaciones de escritorio con base de datos relacional. 23 hrs. Jul. 2021.</p>
+              </div>
+              <div class="item">
+                <h3>Transformación Digital en la Era de la Nube</h3>
+                <p class="meta">Huawei / Ministerio del Trabajo</p>
+                <p>Computación en la nube, infraestructura y digitalización empresarial. Ago. 2021.</p>
+              </div>
+              <div class="item">
+                <h3>Proyecto OfflinePedia</h3>
+                <p class="meta">Prefectura del Carchi / GIZ / Unión Europea</p>
+                <p>40 hrs. Talleres de implementación tecnológica para el desarrollo local. Tulcán.</p>
+              </div>
+              <div class="item">
+                <h3>Administración, BPA y Mejora Continua</h3>
+                <p class="meta">Corporación Favorita</p>
+                <p>Liderazgo de equipos, eficiencia operativa e innovación en entornos corporativos.</p>
+              </div>
+              <div class="item">
+                <h3>Manejo Estratégico de Redes Sociales</h3>
+                <p class="meta">Curso especializado</p>
+                <p>Gestión de plataformas, creación de contenido, analítica y tendencias. Especialidad TikTok.</p>
+              </div>
+              <div class="item">
+                <h3>Escuela de Formación en Participación Ciudadana</h3>
+                <p class="meta">CPCCS</p>
+                <p>12 hrs. modalidad virtual. Prov. Carchi, may.–jun. 2023.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section full pdf-hide">
+            <h2>Stack Tecnológico</h2>
+            <p class="small" style="margin: 0 0 0.4rem; font-weight: 700; color: var(--accent);">Lenguajes</p>
             <div class="tag-row">
-              <span class="tag">PHP</span>
-              <span class="tag">Laravel</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">React</span>
               <span class="tag">Python</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Git</span>
-              <span class="tag">Linux</span>
-              <span class="tag">Automatización con IA</span>
-              <span class="tag">Soporte Técnico</span>
-              <span class="tag">Redes</span>
-              <span class="tag">Ofimática</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">PHP</span>
+              <span class="tag">VB.NET</span>
+              <span class="tag">SQL</span>
+              <span class="tag">HTML5 / CSS3</span>
+              <span class="tag">Bash / Shell</span>
+              <span class="tag">Markdown</span>
             </div>
-          </section>
-
-          <section class="section full">
-            <h2>Cursos y Masterclass</h2>
-            <div class="timeline">
-              <div class="item">
-                <h3>Curso de Administración, buenas prácticas de manufactura y metodologías para la mejora continua</h3>
-                <p>
-                  Enfocado en administración de oficinas y equipos, eficiencia, experiencia, talento humano e innovación.
-                </p>
-              </div>
-              <div class="item">
-                <h3>Curso de Manejo de Redes</h3>
-                <p>
-                  Estrategia en redes sociales, desarrollo de contenido, gestión de plataformas, monitoreo y análisis de tendencias.
-                </p>
-              </div>
+            <p class="small" style="margin: 0.8rem 0 0.4rem; font-weight: 700; color: var(--accent);">Herramientas &amp; Plataformas</p>
+            <div class="tag-row">
+              <span class="tag">Git &amp; GitHub</span>
+              <span class="tag">GitHub Copilot</span>
+              <span class="tag">GitHub Classroom</span>
+              <span class="tag">VS Code</span>
+              <span class="tag">Linux (Ubuntu)</span>
+              <span class="tag">VirtualBox</span>
+              <span class="tag">MySQL Workbench</span>
+              <span class="tag">Jupyter Notebook</span>
+            </div>
+            <p class="small" style="margin: 0.8rem 0 0.4rem; font-weight: 700; color: var(--accent);">Docencia Digital</p>
+            <div class="tag-row">
+              <span class="tag">Google Classroom</span>
+              <span class="tag">Moodle</span>
+              <span class="tag">Scratch</span>
+              <span class="tag">App Inventor</span>
+              <span class="tag">Canva</span>
+              <span class="tag">Genially</span>
+              <span class="tag">ChatGPT / Claude</span>
+              <span class="tag">Zoom / Meet</span>
             </div>
           </section>
 
@@ -462,22 +1030,24 @@
             <h2>Referencias</h2>
             <div class="references">
               <div class="ref">
-                <h3>Comercio y atención al cliente</h3>
-                <p>Subjefatura de tienda - Supermaxi</p>
+                <h3>Carolina Rodríguez</h3>
+                <p>Nutricionista administradora - ASOALIMJENNJORD</p>
+                <p>0979061218</p>
               </div>
               <div class="ref">
-                <h3>Gestión administrativa</h3>
-                <p>Avena Polaca</p>
+                <h3>Alex Hurtado</h3>
+                <p>Jefe de Operaciones - COMPRIMAXI</p>
+                <p>0939841370</p>
               </div>
               <div class="ref">
-                <h3>Soporte técnico y redes</h3>
-                <p>Jefatura de TICs - UPEC</p>
+                <h3>Javier Torres</h3>
+                <p>Jefe TICs - UPEC</p>
+                <p>0995951836</p>
               </div>
             </div>
-            <p class="small" style="margin-top: 0.6rem;">Nombres y datos de contacto disponibles a solicitud durante un proceso de selección.</p>
           </section>
 
-          <section class="section full">
+          <section class="section full pdf-hide">
             <h2>Redes Sociales</h2>
             <div class="tag-row">
               <span class="tag">@riccijandro</span>
@@ -487,31 +1057,29 @@
           </section>
         </section>
 
-        <div class="footer-note">
-          Mi trayectoria profesional me ha llevado a brindar un excelente servicio a los clientes, mejorando resultados junto a empresas e instituciones con objetivos claros y ambiciosos.
-        </div>
       </article>
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script>
       const downloadButton = document.getElementById('downloadCv');
       const printButton = document.getElementById('printCv');
-      const cvContent = document.querySelector('.card');
+      const pdfLayoutEnabled = new URLSearchParams(window.location.search).has('pdf');
 
-      if (downloadButton && cvContent && window.html2pdf) {
-        downloadButton.addEventListener('click', () => {
-          const options = {
-            margin: 8,
-            filename: 'CV-Richard-Stalyn-Rodriguez-Villarreal.pdf',
-            image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2, useCORS: true },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-          };
-
-          html2pdf().set(options).from(cvContent).save();
-        });
+      if (pdfLayoutEnabled) {
+        document.body.classList.add('pdf-export');
       }
+
+      if (downloadButton) {
+        downloadButton.setAttribute('download', 'Riccijandro-CV.pdf');
+      }
+
+      window.addEventListener('beforeprint', () => {
+        document.body.classList.add('pdf-export');
+      });
+
+      window.addEventListener('afterprint', () => {
+        document.body.classList.remove('pdf-export');
+      });
 
       if (printButton) {
         printButton.addEventListener('click', () => {
