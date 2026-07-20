@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Comercial | Richard Stalyn Rodriguez Villarreal - Asesor Comercial / Ventas</title>
+    <style>
+      :root {
+        --bg: #eef4f6;
+        --surface: #ffffff;
+        --surface-2: #f7fbfc;
+        --text: #102127;
+        --muted: #45575f;
+        --line: #d7e3e7;
+        --accent: #0f5b78;
+        --accent-2: #c58a2b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+        font-size: 1.03rem;
+        line-height: 1.42;
+        background: var(--bg);
+      }
+
+      @page {
+        size: A4 portrait;
+        margin: 10mm 11mm;
+      }
+
+      .page {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        background: var(--surface);
+      }
+
+      header.hero {
+        background: linear-gradient(135deg, #0f2630 0%, #11384a 100%);
+        color: #eef7f9;
+        padding: 1.15rem 1.35rem;
+        border-radius: 10px;
+        margin-bottom: 0.9rem;
+      }
+
+      .hero-grid {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.1rem;
+      }
+
+      .hero-photo {
+        width: 84px;
+        height: 84px;
+        border-radius: 999px;
+        object-fit: cover;
+        border: 2px solid var(--accent-2);
+        flex-shrink: 0;
+      }
+
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        font-size: 0.82rem;
+        color: #d8eaf0;
+        margin: 0 0 0.35rem;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 0 0 0.45rem;
+        font-size: 1.95rem;
+        line-height: 1.15;
+      }
+
+      .subtitle {
+        margin: 0 0 0.75rem;
+        max-width: 72ch;
+        color: #cfe0e6;
+        font-size: 1rem;
+      }
+
+      .contact-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem 1.3rem;
+        font-size: 0.92rem;
+        color: #e7f1f4;
+      }
+
+      .contact-row strong {
+        color: #ffffff;
+      }
+
+      .sections {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+      }
+
+      .section {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 0.75rem 0.9rem;
+        background: var(--surface);
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .section.full {
+        grid-column: 1 / -1;
+      }
+
+      .section h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1.08rem;
+        color: var(--accent);
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 0.35rem;
+      }
+
+      .bullet-list {
+        margin: 0;
+        padding-left: 1.2rem;
+      }
+
+      .bullet-list li {
+        color: var(--muted);
+        margin-bottom: 0.25rem;
+      }
+
+      .item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        margin-bottom: 0.75rem;
+      }
+
+      .item:last-child {
+        margin-bottom: 0;
+      }
+
+      .item h3 {
+        margin: 0 0 0.1rem;
+        font-size: 1rem;
+        color: var(--text);
+      }
+
+      .item .meta {
+        margin: 0 0 0.3rem;
+        font-weight: 700;
+        color: var(--accent);
+        font-size: 0.9rem;
+      }
+
+      .item p {
+        margin: 0.15rem 0;
+        color: var(--muted);
+      }
+
+      .tag-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid var(--line);
+        background: var(--surface-2);
+        color: #23424d;
+        border-radius: 999px;
+        padding: 0.28rem 0.7rem;
+        font-size: 0.88rem;
+      }
+
+      .references-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.7rem;
+      }
+
+      .ref {
+        background: var(--surface-2);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 0.7rem 0.8rem;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .ref h3 {
+        margin: 0 0 0.2rem;
+        font-size: 0.95rem;
+      }
+
+      .ref p {
+        margin: 0.15rem 0;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <div class="hero-grid">
+          <img class="hero-photo" src="../img/avatar.png" alt="Richard Stalyn Rodriguez Villarreal" />
+          <div>
+            <p class="eyebrow">Asesor Comercial · Atención al Cliente y Ventas</p>
+            <h1>Richard Stalyn Rodriguez Villarreal</h1>
+            <p class="subtitle">
+              Ingeniero en Ciencias de la Computación con experiencia en atención al cliente, ventas en piso, manejo
+              de caja, mercadeo e inventarios en retail y servicios de alimentación. Disciplina, negociación y manejo
+              de herramientas digitales.
+            </p>
+            <div class="contact-row">
+              <span><strong>Teléfono:</strong> 0983185069</span>
+              <span><strong>Mail:</strong> richardrodriguez271@gmail.com</span>
+              <span><strong>Ciudad:</strong> Ibarra, Ecuador</span>
+              <span><strong>Redes:</strong> @riccijandro</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sections">
+        <section class="section full">
+          <h2>Experiencia en Ventas y Atención al Cliente</h2>
+          <div class="item">
+            <h3>Bodeguero</h3>
+            <p class="meta">COMPRIMAXI S.A · Enero 2026 – Presente</p>
+            <ul class="bullet-list">
+              <li><strong>Control de inventarios y despacho:</strong> recepción, trazabilidad y abastecimiento para garantizar continuidad del servicio.</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Auxiliar de Dietas</h3>
+            <p class="meta">MAKAL Catering &amp; Eventos · Oct. – Dic. 2025</p>
+            <ul class="bullet-list">
+              <li><strong>Atención directa a clientes internos:</strong> servicio conforme a estándares de calidad y satisfacción del cliente.</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Bodeguero</h3>
+            <p class="meta">COMPRIMAXI S.A · Enero – Octubre 2025</p>
+            <ul class="bullet-list">
+              <li><strong>Control de inventarios y despacho:</strong> recepción, trazabilidad y abastecimiento para garantizar continuidad del servicio.</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Auxiliar de Dietas</h3>
+            <p class="meta">ASOALIMJENNJORD · Junio – Diciembre 2024</p>
+            <ul class="bullet-list">
+              <li><strong>Atención al cliente y servicio:</strong> distribución de alimentación institucional con enfoque en calidad y satisfacción.</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Asistente de Gerencia</h3>
+            <p class="meta">Avena Polaca · Período de gestión</p>
+            <ul class="bullet-list">
+              <li><strong>Gestión comercial y administrativa:</strong> reportes ejecutivos y seguimiento a clientes y proveedores.</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Auxiliar de Almacén / Mercaderista</h3>
+            <p class="meta">Corporación Favorita — Supermaxi Tulcán · Nov. 2022 – Ene. 2023</p>
+            <ul class="bullet-list">
+              <li><strong>Ventas y atención al cliente:</strong> asesoramiento en sala de ventas, manejo de caja registradora y cierre de ventas.</li>
+              <li><strong>Mercadeo y exhibición:</strong> perchado, rotación de producto e inventario conforme a demanda.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Formación Académica</h2>
+          <div class="item">
+            <h3>Ingeniero en Ciencias de la Computación</h3>
+            <p class="meta">Universidad Politécnica Estatal del Carchi (UPEC)</p>
+            <p>Título registrado SNIESE · 2 dic. 2025 · Reg. N.° 1074-2025-3258551</p>
+          </div>
+          <div class="item">
+            <h3>Bachillerato General Unificado</h3>
+            <p class="meta">Colegio — Escuela Abdón Calderón</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Cursos y Certificaciones</h2>
+          <ul class="bullet-list">
+            <li><strong>Administración, BPA y Mejora Continua</strong> — Corporación Favorita.</li>
+            <li><strong>Manejo Estratégico de Redes Sociales</strong> — gestión de plataformas, contenido y analítica.</li>
+            <li><strong>Inglés B2</strong> — Certificado UPEC, 2018.</li>
+          </ul>
+        </section>
+
+        <section class="section full">
+          <h2>Aptitudes Comerciales</h2>
+          <div class="tag-row">
+            <span class="tag">Atención al cliente</span>
+            <span class="tag">Ventas y negociación</span>
+            <span class="tag">Manejo de caja</span>
+            <span class="tag">Mercadeo y exhibición</span>
+            <span class="tag">Control de inventarios</span>
+            <span class="tag">Trabajo bajo presión</span>
+            <span class="tag">Trabajo en equipo</span>
+            <span class="tag">Redes sociales y marketing digital</span>
+            <span class="tag">Organización y logística</span>
+            <span class="tag">Comunicación efectiva</span>
+            <span class="tag">Herramientas ofimáticas</span>
+            <span class="tag">Inglés B2</span>
+          </div>
+        </section>
+
+        <section class="section full">
+          <h2>Referencias</h2>
+          <div class="references-grid">
+            <div class="ref">
+              <h3>Carolina Rodríguez</h3>
+              <p>Nutricionista administradora - ASOALIMJENNJORD</p>
+              <p>0979061218</p>
+            </div>
+            <div class="ref">
+              <h3>Alex Hurtado</h3>
+              <p>Jefe de Operaciones - MAKAL</p>
+              <p>0939841370</p>
+            </div>
+            <div class="ref">
+              <h3>Vanessa López</h3>
+              <p>Nutricionista administradora - COMPRIMAXI</p>
+              <p>0985093936</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
