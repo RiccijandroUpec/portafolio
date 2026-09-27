@@ -3,38 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Richard Stalyn Rodriguez Villarreal | Ingeniero en Computación</title>
+    <title>Richard Rodriguez | Desarrollador de Software · Laravel, Node.js e IA</title>
 
     <meta
       name="description"
-      content="Portafolio de Richard Stalyn Rodriguez Villarreal, ingeniero en computación: desarrollo de software, Laravel, automatización con IA, docencia y proyectos en producción."
+      content="Richard Stalyn Rodriguez Villarreal, ingeniero en computación y desarrollador de software. Sistemas en producción con Laravel, React y Node.js, facturación electrónica SRI y automatización con IA."
     />
     <meta
       name="keywords"
-      content="Richard Stalyn Rodriguez Villarreal, ingeniero en computación, desarrollador de software, Laravel, Node.js, automatización con IA, docencia, sistemas operativos, open source, portfolio"
+      content="Richard Stalyn Rodriguez Villarreal, desarrollador de software, ingeniero en computación, Laravel, React, Node.js, Playwright, automatización con IA, facturación electrónica SRI, Ecuador, Ibarra"
     />
     <meta name="author" content="Richard Stalyn Rodriguez Villarreal" />
     <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#09151a" />
+    <meta name="theme-color" content="#0b0f15" />
 
     <link rel="canonical" href="https://riccijandro.cyrshop.app/" />
     <link rel="alternate" href="https://riccijandro.cyrshop.app/" hreflang="es" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Richard Rodriguez | Software, Laravel, Automatización y Open Source" />
+    <meta property="og:title" content="Richard Rodriguez | Desarrollador de Software" />
     <meta
       property="og:description"
-      content="Ingeniero en computación enfocado en desarrollo de software, automatización con IA, docencia y proyectos en producción."
+      content="Sistemas en producción con Laravel, React y Node.js: SaaS multi-tenant, facturación electrónica SRI y automatización con IA."
     />
     <meta property="og:url" content="https://riccijandro.cyrshop.app/" />
     <meta property="og:image" content="https://riccijandro.cyrshop.app/og-image.svg" />
     <meta property="og:locale" content="es_EC" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Richard Stalyn Rodriguez Villarreal | Ingeniero en Computación" />
+    <meta name="twitter:title" content="Richard Rodriguez | Desarrollador de Software" />
     <meta
       name="twitter:description"
-      content="Portafolio profesional con proyectos reales en producción y enfoque open source."
+      content="Sistemas en producción con Laravel, React, Node.js e IA."
     />
     <meta name="twitter:image" content="https://riccijandro.cyrshop.app/og-image.svg" />
 
@@ -44,10 +44,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+
+    <script>
+      try {
+        const saved = localStorage.getItem("theme");
+        if (saved === "light" || saved === "dark") document.documentElement.dataset.theme = saved;
+      } catch (_) {}
+    </script>
     <script defer src="script.js"></script>
 
     <script type="application/ld+json">
@@ -56,17 +63,27 @@
         "@type": "Person",
         "name": "Richard Stalyn Rodriguez Villarreal",
         "url": "https://riccijandro.cyrshop.app/",
+        "image": "https://riccijandro.cyrshop.app/img/avatar.png",
+        "email": "mailto:riccijandro.dev@gmail.com",
         "sameAs": [
           "https://github.com/riccijandro",
           "https://www.linkedin.com/in/riccijandro"
         ],
-        "jobTitle": "Ingeniero en Computación",
+        "jobTitle": "Ingeniero en Computación · Desarrollador de Software",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidad Politécnica Estatal del Carchi"
+        },
         "knowsAbout": [
-          "Software Engineering",
           "Laravel",
+          "React",
+          "Node.js",
+          "Playwright",
           "Automatización con IA",
-          "Operating Systems",
-          "Open Source"
+          "Facturación electrónica SRI",
+          "Linux",
+          "Docker",
+          "MySQL"
         ],
         "worksFor": {
           "@type": "Organization",
@@ -81,382 +98,353 @@
     </script>
   </head>
   <body>
-    <div class="bg-glow bg-glow-one"></div>
-    <div class="bg-glow bg-glow-two"></div>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
 
-    <header class="site-header">
+    <header class="site-header" id="siteHeader">
       <div class="container nav-wrap">
-        <a class="brand" href="#home" aria-label="Inicio">
-          <span class="brand-dot"></span>
-          <span>Richard Rodriguez</span>
+        <a class="brand" href="#top" aria-label="Richard Rodriguez, inicio">
+          <span class="brand-mark">RR</span>
+          <span class="brand-name">Richard Rodriguez</span>
         </a>
 
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <nav class="nav" id="mainNav">
-          <a href="#about">Sobre mí</a>
-          <a href="#skills">Habilidades</a>
-          <a href="#projects">Proyectos</a>
-          <a href="#opensource">Código Abierto</a>
-          <a href="#contact">Contacto</a>
+        <nav class="nav" id="mainNav" aria-label="Principal">
+          <a href="#proyectos">Proyectos</a>
+          <a href="#stack">Stack</a>
+          <a href="#experiencia">Experiencia</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#contacto">Contacto</a>
         </nav>
+
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeToggle" type="button" aria-label="Cambiar tema claro/oscuro">
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" /><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8" /></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z" /></svg>
+          </button>
+          <a class="btn btn-sm btn-outline nav-cv" href="Riccijandro-CV.pdf" download>Descargar CV</a>
+          <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+            <span></span><span></span>
+          </button>
+        </div>
       </div>
     </header>
 
-    <main id="home">
-      <section class="hero section">
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" id="top">
         <div class="container hero-grid">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Ingeniero en Computación</p>
-            <h1>Construyo software robusto, elegante y con impacto real.</h1>
-            <p class="hero-text">
-              Especialista en desarrollo de software, automatización con IA y arquitectura técnica.
-              Construyo soluciones mantenibles, escalables y listas para producción.
+          <div class="hero-copy">
+            <p class="status-pill"><span class="dot"></span> Disponible para proyectos y empleo</p>
+            <h1>
+              Richard Rodriguez
+              <span class="h1-sub">Desarrollador de software que lleva ideas a producción.</span>
+            </h1>
+            <p class="lead">
+              Ingeniero en Computación en Ibarra, Ecuador. Construyo plataformas SaaS con
+              <strong>Laravel y React</strong>, integraciones de <strong>facturación electrónica con el SRI</strong>
+              y bots que automatizan procesos de negocio con <strong>IA y Playwright</strong>.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#projects">Ver proyectos</a>
-              <a class="btn btn-ghost" href="#contact">Hablemos</a>
-              <a class="btn btn-ghost" href="Riccijandro-CV.pdf" download="Riccijandro-CV.pdf" rel="noopener">Descargar CV</a>
-            </div>
-            <div class="stat-row">
-              <article>
-                <h3 id="metricRepos">12</h3>
-                <p>repositorios en GitHub</p>
-              </article>
-              <article>
-                <h3>6+</h3>
-                <p>sistemas en producción</p>
-              </article>
-              <article>
-                <h3>Laravel · Node.js · IA</h3>
-                <p>stack principal</p>
-              </article>
+              <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+              <a
+                class="btn btn-outline"
+                href="https://wa.me/593983185069?text=Hola%20Richard%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20hablar%20sobre%20una%20oportunidad."
+                target="_blank"
+                rel="noopener"
+                >Hablemos</a
+              >
+              <a class="text-link" href="https://github.com/riccijandro" target="_blank" rel="noopener">
+                github.com/riccijandro <span aria-hidden="true">↗</span>
+              </a>
             </div>
           </div>
 
-          <aside class="hero-card reveal delay-1">
-            <img class="hero-avatar" src="img/avatar.png" alt="Richard Stalyn Rodriguez Villarreal" width="84" height="84" loading="eager" />
-            <p class="card-kicker">Enfoque profesional</p>
-            <ul>
-              <li><strong>GitHub:</strong> <a href="https://github.com/riccijandro" target="_blank" rel="noopener">github.com/riccijandro</a></li>
-              <li><strong>Ubicación:</strong> Ibarra, Ecuador</li>
-              <li><strong>Enfoque:</strong> software, automatización con IA, sistemas operativos, open source</li>
-            </ul>
-            <div class="card-line"></div>
-            <p class="quote">
-              "Máximo esfuerzo. Siempre."
-            </p>
-          </aside>
-        </div>
-      </section>
-
-      <section class="section" id="about">
-        <div class="container section-grid">
-          <div class="section-head reveal">
-            <p class="eyebrow">Sobre mí</p>
-            <h2>Ingeniería con mentalidad de sistema y foco en resultados.</h2>
-          </div>
-          <div class="section-content reveal delay-1">
-            <p>
-              Soy Richard Stalyn Rodriguez Villarreal, ingeniero en computación y desarrollador de software. Diseño,
-              construyo y mantengo sistemas reales en producción: desde plataformas SaaS multi-tenant hasta bots que
-              automatizan procesos de negocio con inteligencia artificial.
-            </p>
-            <p>
-              Actualmente trabajo en el Hospital San Vicente de Paul de Ibarra, Ecuador. También he trabajado como docente
-              en la UE San Pedro Pascual y en la Universidad Politécnica Estatal del Carchi, además de desarrollar soluciones
-              con sistemas operativos, automatización y herramientas técnicas.
-            </p>
-            <div class="social-row">
-              <a href="https://github.com/riccijandro" target="_blank" rel="noopener">GitHub</a>
-              <a href="https://www.linkedin.com/in/riccijandro" target="_blank" rel="noopener">LinkedIn</a>
-              <a href="mailto:riccijandro.dev@gmail.com">riccijandro.dev@gmail.com</a>
+          <div class="hero-visual">
+            <figure class="portrait">
+              <img src="img/avatar.png" alt="Retrato de Richard Stalyn Rodriguez Villarreal" width="404" height="543" loading="eager" />
+            </figure>
+            <div class="terminal" aria-label="Resumen en formato terminal">
+              <div class="terminal-bar"><span></span><span></span><span></span><em>~/richard</em></div>
+              <pre><code><span class="t-prompt">$</span> whoami
+<span class="t-out">ingeniero en computación · full-stack</span>
+<span class="t-prompt">$</span> cat stack.txt
+<span class="t-out">laravel · react · node · playwright · ia</span>
+<span class="t-prompt">$</span> uptime
+<span class="t-ok">● 6+ sistemas en producción</span></code></pre>
             </div>
           </div>
         </div>
-      </section>
 
-      <section class="section" id="trayectoria">
         <div class="container">
-          <div class="section-head reveal">
-            <p class="eyebrow">Trayectoria</p>
-            <h2>Experiencia profesional construida en entornos técnicos, comerciales y educativos.</h2>
-          </div>
-
-          <div class="timeline-grid">
-            <article class="timeline-card reveal">
-              <p class="timeline-date">Actual</p>
-              <h3>Hospital San Vicente de Paul</h3>
-              <p>
-                Apoyo técnico, estabilidad operativa y mejora continua de procesos internos en Ibarra, Ecuador.
-                Esta experiencia consolida mi capacidad para resolver incidencias, adaptarme a flujos críticos y trabajar con responsabilidad.
-              </p>
-            </article>
-            <article class="timeline-card reveal delay-1">
-              <p class="timeline-date">Docencia</p>
-              <h3>UE San Pedro Pascual</h3>
-              <p>
-                Docente de Computación y Emprendimiento y Gestión. Desarrollo de clases con enfoque práctico,
-                acompañamiento a estudiantes y organización de contenidos orientados al aprendizaje aplicado.
-              </p>
-            </article>
-            <article class="timeline-card reveal delay-2">
-              <p class="timeline-date">Formación técnica</p>
-              <h3>Universidad Politécnica Estatal del Carchi</h3>
-              <p>
-                Pasantía con actividades de diagnóstico, mantenimiento preventivo, respaldo y recuperación de datos,
-                administración de redes, ciberseguridad básica e instalación de software y hardware.
-              </p>
-            </article>
-            <article class="timeline-card reveal">
-              <p class="timeline-date">Comercio y gestión</p>
-              <h3>Supermaxi y Avena Polaca</h3>
-              <p>
-                Experiencia en mercadería, atención al cliente, caja, logística, inventarios, archivo, planificación,
-                asesoramiento y control de operaciones, reforzando disciplina, orden y capacidad de respuesta.
-              </p>
-            </article>
-            <article class="timeline-card reveal delay-1">
-              <p class="timeline-date">Jun. 2024 - Actualidad</p>
-              <h3>ASOALIMJENNJORD, COMPRIMAXI y MAKAL Catering &amp; Eventos</h3>
-              <p>
-                Auxiliar de dietas y bodeguero en servicios de alimentación institucional: preparación y distribución
-                de dietas especiales, control de inventarios de insumos y cumplimiento de normas de higiene y
-                manipulación de alimentos.
-              </p>
-            </article>
-          </div>
-
-          <div class="gallery-grid">
-            <figure class="gallery-item reveal">
-              <img src="img/docencia-1.png" alt="Clase de Computación con estudiantes de la UE San Pedro Pascual" loading="lazy" />
-              <figcaption>Docencia · UE San Pedro Pascual</figcaption>
-            </figure>
-            <figure class="gallery-item reveal delay-1">
-              <img src="img/docencia-2.png" alt="Sesión de clase con estudiantes en el aula" loading="lazy" />
-              <figcaption>Docencia · UE San Pedro Pascual</figcaption>
-            </figure>
-            <figure class="gallery-item reveal delay-2">
-              <img src="img/docencia-3.png" alt="Grupo de estudiantes en el aula durante una clase" loading="lazy" />
-              <figcaption>Docencia · UE San Pedro Pascual</figcaption>
-            </figure>
-          </div>
+          <dl class="stats">
+            <div>
+              <dt>Sistemas en producción</dt>
+              <dd>6+</dd>
+            </div>
+            <div>
+              <dt>Pruebas automatizadas en el POS SaaS</dt>
+              <dd>69</dd>
+            </div>
+            <div>
+              <dt>Repositorios públicos</dt>
+              <dd id="metricRepos">12</dd>
+            </div>
+            <div>
+              <dt>Años programando en GitHub</dt>
+              <dd id="metricYears">6</dd>
+            </div>
+          </dl>
         </div>
       </section>
 
-      <section class="section" id="formacion">
+      <!-- PROYECTOS -->
+      <section class="section" id="proyectos">
         <div class="container">
-          <div class="section-head reveal">
-            <p class="eyebrow">Formación</p>
-            <h2>Educación, cursos y herramientas que fortalecen mi perfil profesional.</h2>
-          </div>
+          <header class="section-head reveal">
+            <p class="eyebrow"><span>01</span> Proyectos</p>
+            <h2>Software real, usado por negocios reales.</h2>
+            <p class="section-intro">
+              Cada proyecto resuelve un problema concreto de un cliente o institución. No son ejercicios de práctica.
+            </p>
+          </header>
 
-          <div class="info-grid">
-            <article class="info-card reveal">
-              <h3>Educación formal</h3>
-              <ul>
-                <li>Universidad Politécnica Estatal del Carchi - Ingeniero en Computación</li>
-                <li>Colegio - Bachillerato General Unificado</li>
-                <li>Escuela - Abdón Calderón</li>
+          <article class="project project-featured reveal">
+            <div class="project-body">
+              <p class="project-kicker">Proyecto destacado · SaaS en producción</p>
+              <h3>POS y facturación electrónica multi-tenant</h3>
+              <p>
+                Plataforma SaaS que da servicio a varios comercios desde una sola instalación: punto de venta para
+                restaurantes y retail, con emisión de comprobantes electrónicos autorizados por el SRI de Ecuador.
+              </p>
+              <ul class="project-points">
+                <li>Arquitectura multi-tenant: datos aislados por comercio en una misma base de código.</li>
+                <li>Firma y envío de comprobantes electrónicos integrados al flujo de venta.</li>
+                <li>69 pruebas automatizadas y despliegue con Docker.</li>
               </ul>
-            </article>
-            <article class="info-card reveal delay-1">
-              <h3>Cursos y masterclass</h3>
-              <ul>
-                <li>Administración, buenas prácticas de manufactura y mejora continua - La Favorita</li>
-                <li>Manejo de Redes - estrategia, contenido, monitoreo y análisis</li>
+              <ul class="tags" aria-label="Tecnologías">
+                <li>Laravel 12</li><li>React 18</li><li>Inertia.js</li><li>MySQL</li><li>Docker</li>
               </ul>
-            </article>
-            <article class="info-card reveal delay-2">
-              <h3>Idiomas</h3>
-              <div class="tag-row">
-                <span class="tag">Inglés 85%</span>
-                <span class="tag">Español nativo</span>
+              <p class="project-private">Repositorio privado · demo disponible bajo solicitud</p>
+            </div>
+            <div class="project-visual" aria-hidden="true">
+              <div class="mock">
+                <div class="mock-row mock-head"><span>Factura 001-001-000000482</span><b class="mock-badge">AUTORIZADO</b></div>
+                <div class="mock-row"><span>Almuerzo ejecutivo ×2</span><span>$9.00</span></div>
+                <div class="mock-row"><span>Jugo natural ×2</span><span>$3.00</span></div>
+                <div class="mock-row"><span>IVA 15%</span><span>$1.80</span></div>
+                <div class="mock-row mock-total"><span>Total</span><span>$13.80</span></div>
+                <div class="mock-foot"><span>Tenant: restaurante-centro</span><span>SRI ✓</span></div>
               </div>
-            </article>
-            <article class="info-card reveal">
-              <h3>Aptitudes</h3>
-              <div class="tag-row">
-                <span class="tag">Aprendizaje continuo</span>
-                <span class="tag">Trabajo en equipo</span>
-                <span class="tag">Trabajo bajo presión</span>
-                <span class="tag">Redes sociales</span>
-                <span class="tag">Organización</span>
-                <span class="tag">Programas utilitarios</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+            </div>
+          </article>
 
-      <section class="section" id="referencias">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="eyebrow">Referencias</p>
-            <h2>Referencias profesionales disponibles a solicitud.</h2>
-          </div>
-
-          <div class="reference-grid">
-            <article class="reference-card reveal">
-              <h3>Comercio y atención al cliente</h3>
-              <p>Subjefatura de tienda - Supermaxi</p>
-            </article>
-            <article class="reference-card reveal delay-1">
-              <h3>Gestión administrativa</h3>
-              <p>Avena Polaca</p>
-            </article>
-            <article class="reference-card reveal delay-2">
-              <h3>Soporte técnico y redes</h3>
-              <p>Jefatura de TICs - UPEC</p>
-            </article>
-          </div>
-          <p class="reference-note">Nombres y datos de contacto de cada referencia disponibles a solicitud durante un proceso de selección.</p>
-        </div>
-      </section>
-
-      <section class="section" id="skills">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="eyebrow">Habilidades</p>
-            <h2>Capacidades técnicas de alto rendimiento.</h2>
-          </div>
-
-          <div class="skills-grid">
-            <article class="skill-card reveal">
-              <h3>Desarrollo de software</h3>
-              <p>Aplicaciones web, APIs, arquitectura limpia y sistemas multi-tenant en producción con Laravel.</p>
-            </article>
-            <article class="skill-card reveal delay-1">
-              <h3>Automatización e IA aplicada</h3>
-              <p>Bots y flujos de negocio con Playwright e integración de modelos de IA (Gemini, DeepSeek) para tareas reales.</p>
-            </article>
-            <article class="skill-card reveal delay-2">
-              <h3>Sistemas operativos</h3>
-              <p>Linux, shell scripting, administración y solución de problemas en entorno real.</p>
-            </article>
-            <article class="skill-card reveal">
-              <h3>Bases de datos y DevOps</h3>
-              <p>MySQL, Docker, control de versiones con Git y despliegue de aplicaciones en producción.</p>
-            </article>
-            <article class="skill-card reveal delay-1">
-              <h3>Código abierto</h3>
-              <p>Colaboración comunitaria, repositorios públicos y mejora continua.</p>
-            </article>
-            <article class="skill-card reveal delay-2">
-              <h3>Stack principal</h3>
-              <p>PHP, Laravel, JavaScript, Node.js, React, Python, HTML y CSS.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="projects">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="eyebrow">Proyectos reales</p>
-            <h2>Sistemas en producción, no ejercicios de práctica.</h2>
-          </div>
-
-          <div class="projects-grid" id="projectsGrid">
-            <article class="project-card reveal">
-              <p class="project-tag">Node.js · Playwright · IA</p>
-              <h3>Bot de WhatsApp para recargas y pagos (BeMovil)</h3>
+          <div class="project-grid">
+            <article class="project reveal">
+              <p class="project-kicker">Automatización · IA</p>
+              <h3>Bot de WhatsApp para recargas y pagos</h3>
               <p>
-                Bot que automatiza recargas móviles y pago de servicios en Ecuador. Clasifica la intención del cliente con IA
-                (DeepSeek/Gemini), ejecuta el flujo con Playwright sobre el sitio del proveedor y exige confirmación del
-                administrador con un código de un solo uso antes de cobrar.
+                Automatiza recargas móviles y pago de servicios. La IA clasifica la intención del cliente, Playwright
+                ejecuta el flujo en el sitio del proveedor y el administrador confirma cada cobro con un código de un solo uso.
               </p>
-              <a href="https://github.com/riccijandro/WebScraper" target="_blank" rel="noopener">Ver repositorio</a>
+              <ul class="tags" aria-label="Tecnologías">
+                <li>Node.js</li><li>Playwright</li><li>DeepSeek</li><li>Gemini</li>
+              </ul>
+              <a class="text-link" href="https://github.com/riccijandro/WebScraper" target="_blank" rel="noopener">Ver repositorio <span aria-hidden="true">↗</span></a>
             </article>
-            <article class="project-card reveal delay-1">
-              <p class="project-tag">Laravel · Alpine.js · Gemini IA</p>
-              <h3>RickTech — Gestión de catering con IA</h3>
+
+            <article class="project reveal delay-1">
+              <p class="project-kicker">SaaS · IA generativa</p>
+              <h3>RickTech — gestión de catering</h3>
               <p>
-                Plataforma para empresas de catering: matriz visual de planificación de menús (drag & drop), costeo en
-                cascada por receta, alertas de presupuesto por servicio y generación de menús semanales con IA a partir
-                del catálogo real de recetas.
+                Planificación visual de menús con drag &amp; drop, costeo en cascada por receta, alertas de presupuesto por
+                servicio y generación de menús semanales con IA a partir del catálogo real de recetas.
               </p>
+              <ul class="tags" aria-label="Tecnologías">
+                <li>Laravel</li><li>Alpine.js</li><li>Gemini</li><li>MySQL</li>
+              </ul>
               <p class="project-private">Repositorio privado · disponible bajo solicitud</p>
             </article>
-            <article class="project-card reveal delay-2">
-              <p class="project-tag">Laravel 12 · React 18 · Inertia.js</p>
-              <h3>POS y facturación electrónica SaaS (Ecuador)</h3>
+
+            <article class="project reveal delay-2">
+              <p class="project-kicker">Salud · Web</p>
+              <h3>Dietas hospitalarias</h3>
               <p>
-                Plataforma SaaS multi-tenant para varios comercios, con punto de venta para restaurantes/retail y
-                facturación electrónica integrada al SRI. 69 pruebas automatizadas y despliegue con Docker, en producción.
+                Aplicación web para registrar y dar seguimiento a las dietas de pacientes hospitalizados, pensada a partir
+                de la operación diaria de un servicio de alimentación.
               </p>
-              <p class="project-private">Repositorio privado · disponible bajo solicitud</p>
-            </article>
-            <article class="project-card reveal">
-              <p class="project-tag">Laravel · MySQL</p>
-              <h3>dietas-hospital</h3>
-              <p>Aplicación web para el registro y seguimiento de dietas hospitalarias.</p>
-              <a href="https://github.com/riccijandro/dietas-hospital" target="_blank" rel="noopener">Ver repositorio</a>
+              <ul class="tags" aria-label="Tecnologías">
+                <li>Laravel</li><li>MySQL</li>
+              </ul>
+              <a class="text-link" href="https://github.com/riccijandro/dietas-hospital" target="_blank" rel="noopener">Ver repositorio <span aria-hidden="true">↗</span></a>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="opensource">
-        <div class="container open-source reveal">
-          <div>
-            <p class="eyebrow">Código Abierto</p>
-            <h2>Construir en público. Aprender en comunidad.</h2>
+      <!-- STACK -->
+      <section class="section section-alt" id="stack">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow"><span>02</span> Stack</p>
+            <h2>Herramientas que uso a diario.</h2>
+          </header>
+
+          <div class="stack-grid">
+            <div class="stack-col reveal">
+              <h3>Backend</h3>
+              <ul><li>PHP</li><li>Laravel</li><li>Node.js</li><li>Python</li><li>APIs REST</li></ul>
+            </div>
+            <div class="stack-col reveal delay-1">
+              <h3>Frontend</h3>
+              <ul><li>React</li><li>Inertia.js</li><li>Alpine.js</li><li>JavaScript</li><li>HTML y CSS</li></ul>
+            </div>
+            <div class="stack-col reveal delay-2">
+              <h3>IA y automatización</h3>
+              <ul><li>Playwright</li><li>Gemini</li><li>DeepSeek</li><li>Bots de WhatsApp</li><li>Web scraping</li></ul>
+            </div>
+            <div class="stack-col reveal delay-3">
+              <h3>Datos e infraestructura</h3>
+              <ul><li>MySQL</li><li>Docker</li><li>Git y GitHub</li><li>Linux y shell</li><li>Railway</li></ul>
+            </div>
+          </div>
+
+          <div class="principles">
+            <article class="reveal">
+              <h3>Producción primero</h3>
+              <p>Pruebas automatizadas, contenedores y despliegues repetibles. Si no se puede desplegar, no está terminado.</p>
+            </article>
+            <article class="reveal delay-1">
+              <h3>Automatizar lo repetitivo</h3>
+              <p>Uso IA donde ahorra horas reales de trabajo, con controles humanos en los pasos que mueven dinero.</p>
+            </article>
+            <article class="reveal delay-2">
+              <h3>Entender el negocio</h3>
+              <p>He trabajado en caja, bodega, aula y soporte. Eso me ayuda a construir software que la gente sí usa.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCIA -->
+      <section class="section" id="experiencia">
+        <div class="container exp-layout">
+          <header class="section-head reveal">
+            <p class="eyebrow"><span>03</span> Experiencia</p>
+            <h2>Trayectoria.</h2>
+            <p class="section-intro">
+              Experiencia técnica, docente y operativa en entornos donde las cosas tienen que funcionar.
+            </p>
+            <a class="btn btn-outline" href="Riccijandro-CV.pdf" download>Descargar CV completo (PDF)</a>
+          </header>
+
+          <ol class="timeline">
+            <li class="reveal">
+              <p class="tl-date">Actualidad</p>
+              <div>
+                <h3>Hospital San Vicente de Paul</h3>
+                <p class="tl-role">Apoyo técnico y operativo · Ibarra</p>
+                <p>Resolución de incidencias, estabilidad operativa y mejora continua de procesos internos en un entorno crítico.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <p class="tl-date">Independiente</p>
+              <div>
+                <h3>Proyectos de software propios</h3>
+                <p class="tl-role">Desarrollador full-stack</p>
+                <p>Diseño, desarrollo y despliegue de los sistemas de esta página: POS SaaS con facturación SRI, gestión de catering y bots con IA.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <p class="tl-date">Docencia</p>
+              <div>
+                <h3>UE San Pedro Pascual</h3>
+                <p class="tl-role">Docente de Computación y Emprendimiento</p>
+                <p>Clases con enfoque práctico, planificación de contenidos y acompañamiento a estudiantes.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <p class="tl-date">Pasantía</p>
+              <div>
+                <h3>Universidad Politécnica Estatal del Carchi</h3>
+                <p class="tl-role">Soporte técnico y redes · Jefatura de TICs</p>
+                <p>Diagnóstico y mantenimiento de equipos, respaldo y recuperación de datos, administración de redes y ciberseguridad básica.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <p class="tl-date">Otras</p>
+              <div>
+                <h3>Comercio y servicios</h3>
+                <p class="tl-role">Supermaxi · Avena Polaca · ASOALIMJENNJORD · COMPRIMAXI · MAKAL</p>
+                <p>Caja, inventarios, logística y atención al cliente. Disciplina y conocimiento de primera mano de cómo opera un negocio.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- SOBRE MÍ -->
+      <section class="section section-alt" id="sobre-mi">
+        <div class="container about-grid">
+          <div class="reveal">
+            <p class="eyebrow"><span>04</span> Sobre mí</p>
+            <h2>Aprendo rápido y termino lo que empiezo.</h2>
             <p>
-              Mi perfil open source refleja contribuciones reales, aprendizaje constante
-              y una mentalidad de compartir conocimiento útil.
+              Soy Richard Stalyn Rodriguez Villarreal, Ingeniero en Computación por la Universidad Politécnica Estatal del
+              Carchi. Me gusta el software que resuelve problemas concretos: que un comercio facture sin complicaciones,
+              que un proceso manual tarde segundos en lugar de horas.
+            </p>
+            <p>
+              Trabajo con código abierto, publico mis proyectos en GitHub y me mantengo aprendiendo. Mi lema es sencillo:
+              <em>máximo esfuerzo, siempre.</em>
             </p>
           </div>
-          <div class="opensource-list">
-            <article>
-              <h3><span id="metricCommits90">0</span> eventos push en 90 días</h3>
-              <p>Actividad reciente registrada en eventos públicos de GitHub.</p>
-            </article>
-            <article>
-              <h3><span id="metricYears">6</span> años en GitHub</h3>
-              <p>Trayectoria desde la creación de la cuenta en 2020.</p>
-            </article>
-            <article>
-              <h3><span id="metricTopLang">PHP</span> como tecnología destacada</h3>
-              <p>Lenguaje con mayor presencia en repositorios visibles.</p>
-            </article>
+
+          <div class="about-side reveal delay-1">
+            <dl class="facts">
+              <div><dt>Formación</dt><dd>Ingeniero en Computación · UPEC</dd></div>
+              <div><dt>Ubicación</dt><dd>Ibarra, Ecuador · remoto o presencial</dd></div>
+              <div><dt>Idiomas</dt><dd>Español nativo · Inglés 85%</dd></div>
+            </dl>
+
+            <div class="gh-card" aria-live="polite">
+              <p class="gh-title">Actividad en GitHub <span class="gh-live">en vivo</span></p>
+              <div class="gh-metrics">
+                <div><b id="metricCommits90">—</b><span>pushes en 90 días</span></div>
+                <div><b id="metricTopLang">PHP</b><span>lenguaje principal</span></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section contact" id="contact">
-        <div class="container contact-wrap reveal">
-          <p class="eyebrow">Contacto</p>
-          <h2>Listo para colaborar en proyectos de alto nivel.</h2>
-          <p>
-            Escríbeme directo por WhatsApp y te respondo con enfoque técnico y soluciones claras.
-          </p>
-
+      <!-- CONTACTO -->
+      <section class="section contact" id="contacto">
+        <div class="container contact-card reveal">
+          <p class="eyebrow"><span>05</span> Contacto</p>
+          <h2>¿Tienes un proyecto o una vacante?</h2>
+          <p class="section-intro">Escríbeme por WhatsApp o correo y conversamos sobre lo que necesitas.</p>
           <div class="contact-actions">
             <a
-              class="btn btn-primary"
+              class="btn btn-primary btn-lg"
               href="https://wa.me/593983185069?text=Hola%20Richard%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20hablar%20sobre%20una%20oportunidad."
               target="_blank"
               rel="noopener"
+              >Escribir por WhatsApp</a
             >
-              Escribir por WhatsApp
-            </a>
-            <a class="btn btn-ghost" href="mailto:riccijandro.dev@gmail.com">riccijandro.dev@gmail.com</a>
-            <a class="btn btn-ghost" href="https://github.com/riccijandro" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn btn-ghost" href="https://www.linkedin.com/in/riccijandro" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-outline btn-lg" href="mailto:riccijandro.dev@gmail.com">riccijandro.dev@gmail.com</a>
           </div>
+          <ul class="contact-links">
+            <li><a href="https://github.com/riccijandro" target="_blank" rel="noopener">GitHub ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/riccijandro" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="Riccijandro-CV.pdf" download>CV en PDF ↓</a></li>
+          </ul>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-wrap">
-        <p>© <span id="year"></span> Richard Stalyn Rodriguez Villarreal.</p>
-        <p>Software, automatización con IA y open source.</p>
+        <p>© <span id="year"></span> Richard Stalyn Rodriguez Villarreal</p>
+        <p class="mono">Hecho a mano con HTML, CSS y JavaScript.</p>
       </div>
     </footer>
   </body>
