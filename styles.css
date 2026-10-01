@@ -758,6 +758,12 @@ p {
   border: 3px solid var(--surface);
 }
 
+/* Quinde: el ticket es más angosto que el celular. */
+.project-shots .shot-ticket {
+  width: 23%;
+  border-radius: 6px;
+}
+
 .project-featured-reverse {
   grid-template-columns: 1fr 1.1fr;
 }
