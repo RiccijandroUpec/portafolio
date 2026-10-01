@@ -1,5 +1,5 @@
 const profileConfig = {
-  githubUser: "riccijandro",
+  githubUser: "RiccijandroUpec",
   fallbackMetrics: {
     repos: 12,
     commits90: 0,
