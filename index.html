@@ -7,11 +7,11 @@
 
     <meta
       name="description"
-      content="Richard Stalyn Rodriguez Villarreal, ingeniero en computación y desarrollador de software. Sistemas en producción con Laravel, React y Node.js, facturación electrónica SRI y automatización con IA."
+      content="Richard Stalyn Rodriguez Villarreal, ingeniero en computación y desarrollador de software. Sistemas en producción con Laravel, React, Flutter y Node.js: gestión de negocios con app móvil, facturación electrónica SRI y automatización con IA."
     />
     <meta
       name="keywords"
-      content="Richard Stalyn Rodriguez Villarreal, desarrollador de software, ingeniero en computación, Laravel, React, Node.js, Playwright, automatización con IA, facturación electrónica SRI, Ecuador, Ibarra"
+      content="Richard Stalyn Rodriguez Villarreal, desarrollador de software, ingeniero en computación, Laravel, React, Flutter, Java, Node.js, Playwright, automatización con IA, facturación electrónica SRI, Ecuador, Ibarra"
     />
     <meta name="author" content="Richard Stalyn Rodriguez Villarreal" />
     <meta name="robots" content="index, follow" />
@@ -24,7 +24,7 @@
     <meta property="og:title" content="Richard Rodriguez | Desarrollador de Software" />
     <meta
       property="og:description"
-      content="Sistemas en producción con Laravel, React y Node.js: SaaS multi-tenant, facturación electrónica SRI y automatización con IA."
+      content="Sistemas en producción con Laravel, React, Flutter y Node.js: apps móviles, punto de venta con facturación SRI y automatización con IA."
     />
     <meta property="og:url" content="https://riccijandro.cyrshop.app/" />
     <meta property="og:image" content="https://riccijandro.cyrshop.app/og-image.svg" />
@@ -77,6 +77,8 @@
         "knowsAbout": [
           "Laravel",
           "React",
+          "Flutter",
+          "Java",
           "Node.js",
           "Playwright",
           "Automatización con IA",
@@ -139,9 +141,9 @@
               <span class="h1-sub">Desarrollador de software que lleva ideas a producción.</span>
             </h1>
             <p class="lead">
-              Ingeniero en Computación en Ibarra, Ecuador. Construyo plataformas SaaS con
-              <strong>Laravel y React</strong>, integraciones de <strong>facturación electrónica con el SRI</strong>
-              y bots que automatizan procesos de negocio con <strong>IA y Playwright</strong>.
+              Ingeniero en Computación en Ibarra, Ecuador. Construyo sistemas de gestión con
+              <strong>Laravel</strong> y sus <strong>apps móviles en Flutter</strong>, puntos de venta con
+              <strong>facturación electrónica del SRI</strong> y bots que automatizan procesos con <strong>IA y Playwright</strong>.
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
@@ -167,7 +169,7 @@
               <pre><code><span class="t-prompt">$</span> whoami
 <span class="t-out">ingeniero en computación · full-stack</span>
 <span class="t-prompt">$</span> cat stack.txt
-<span class="t-out">laravel · react · node · playwright · ia</span>
+<span class="t-out">laravel · flutter · react · java · node · ia</span>
 <span class="t-prompt">$</span> uptime
 <span class="t-ok">● 6+ sistemas en producción</span></code></pre>
             </div>
@@ -181,8 +183,8 @@
               <dd>6+</dd>
             </div>
             <div>
-              <dt>Pruebas automatizadas en el POS SaaS</dt>
-              <dd>69</dd>
+              <dt>Pruebas automatizadas en Valkyria</dt>
+              <dd>243</dd>
             </div>
             <div>
               <dt>Repositorios públicos</dt>
@@ -209,36 +211,74 @@
 
           <article class="project project-featured reveal">
             <div class="project-body">
-              <p class="project-kicker">Proyecto destacado · SaaS en producción</p>
-              <h3>POS y facturación electrónica multi-tenant</h3>
+              <p class="project-kicker">Proyecto destacado · Cliente real en producción</p>
+              <h3>Valkyria — web, gestión y app para un box de CrossFit</h3>
               <p>
-                Plataforma SaaS que da servicio a varios comercios desde una sola instalación: punto de venta para
-                restaurantes y retail, con emisión de comprobantes electrónicos autorizados por el SRI de Ecuador.
+                Sistema completo para un gimnasio de Ibarra: una web que capta clientes, un panel para cobrar y administrar,
+                y una app Android para que cada atleta siga su asistencia, sus marcas y su plan.
               </p>
               <ul class="project-points">
-                <li>Arquitectura multi-tenant: datos aislados por comercio en una misma base de código.</li>
-                <li>Firma y envío de comprobantes electrónicos integrados al flujo de venta.</li>
-                <li>69 pruebas automatizadas y despliegue con Docker.</li>
+                <li>Panel con roles (administración, coach, recepción) y app nativa en Flutter sobre una API Laravel.</li>
+                <li>Caja con bitácora inalterable, recordatorios por WhatsApp y reportes del mes.</li>
+                <li>Asistencia por QR o automática por geolocalización, comunidad de logros y notificaciones push.</li>
+                <li>243 pruebas automatizadas, despliegue con un comando y servidor endurecido y monitoreado.</li>
               </ul>
               <ul class="tags" aria-label="Tecnologías">
-                <li>Laravel 12</li><li>React 18</li><li>Inertia.js</li><li>MySQL</li><li>Docker</li>
+                <li>Laravel 12</li><li>Filament</li><li>Flutter</li><li>Firebase</li><li>SQLite</li><li>Nginx</li>
               </ul>
-              <p class="project-private">Repositorio privado · demo disponible bajo solicitud</p>
-            </div>
-            <div class="project-visual" aria-hidden="true">
-              <div class="mock">
-                <div class="mock-row mock-head"><span>Factura 001-001-000000482</span><b class="mock-badge">AUTORIZADO</b></div>
-                <div class="mock-row"><span>Almuerzo ejecutivo ×2</span><span>$9.00</span></div>
-                <div class="mock-row"><span>Jugo natural ×2</span><span>$3.00</span></div>
-                <div class="mock-row"><span>IVA 15%</span><span>$1.80</span></div>
-                <div class="mock-row mock-total"><span>Total</span><span>$13.80</span></div>
-                <div class="mock-foot"><span>Tenant: restaurante-centro</span><span>SRI ✓</span></div>
+              <div class="project-links">
+                <a class="text-link" href="https://valkyria.cyrshop.app/" target="_blank" rel="noopener">Ver sitio en producción <span aria-hidden="true">↗</span></a>
+                <span class="project-private">Repositorio privado · demo bajo solicitud</span>
               </div>
+            </div>
+            <div class="project-visual project-shots">
+              <img class="shot-desktop" src="img/valkyria-panel.webp" alt="Panel de administración de Valkyria con cobros del día, números del mes y atletas por atender" width="1200" height="769" loading="lazy" />
+              <img class="shot-phone" src="img/valkyria-app.webp" alt="Pantalla de inicio de la app de Valkyria para atletas" width="360" height="628" loading="lazy" />
+            </div>
+          </article>
+
+          <article class="project project-featured project-featured-reverse reveal">
+            <div class="project-body">
+              <p class="project-kicker">Código abierto · Punto de venta de escritorio</p>
+              <h3>Quinde POS — punto de venta libre con facturación SRI</h3>
+              <p>
+                Punto de venta para tiendas, cafeterías y restaurantes del Ecuador. Partí de uniCenta oPOS (GPL) y lo
+                modernicé con facturación electrónica integrada, una interfaz nueva y un instalador listo para usar.
+              </p>
+              <ul class="project-points">
+                <li>Factura y nota de crédito electrónicas: firma XAdES-BES, autorización del SRI y RIDE en PDF por correo.</li>
+                <li>Pantalla de venta táctil, promociones, arqueo de caja ciego y panel del negocio.</li>
+                <li>Instalador de Windows con Java y MariaDB incluidos y asistente de configuración inicial.</li>
+              </ul>
+              <ul class="tags" aria-label="Tecnologías">
+                <li>Java 11</li><li>Swing + FlatLaf</li><li>MariaDB</li><li>SRI</li><li>Inno Setup</li>
+              </ul>
+              <div class="project-links">
+                <a class="text-link" href="https://quindepos.cyrshop.app/" target="_blank" rel="noopener">Sitio y descarga <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="https://github.com/RiccijandroUpec/QuindePOS" target="_blank" rel="noopener">Ver repositorio <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="project-visual project-shots">
+              <img class="shot-desktop" src="img/quinde-venta.webp" alt="Pantalla de venta de Quinde POS con productos por categoría y total a cobrar" width="1200" height="647" loading="lazy" />
             </div>
           </article>
 
           <div class="project-grid">
             <article class="project reveal">
+              <p class="project-kicker">SaaS · Facturación electrónica</p>
+              <h3>POS y facturación multi-tenant</h3>
+              <p>
+                Plataforma SaaS que da servicio a varios comercios desde una sola instalación: punto de venta para
+                restaurantes y retail con comprobantes electrónicos autorizados por el SRI, datos aislados por comercio
+                y 69 pruebas automatizadas.
+              </p>
+              <ul class="tags" aria-label="Tecnologías">
+                <li>Laravel 12</li><li>React 18</li><li>Inertia.js</li><li>MySQL</li><li>Docker</li>
+              </ul>
+              <p class="project-private">Repositorio privado · demo disponible bajo solicitud</p>
+            </article>
+
+            <article class="project reveal delay-1">
               <p class="project-kicker">Automatización · IA</p>
               <h3>Bot de WhatsApp para recargas y pagos</h3>
               <p>
@@ -291,11 +331,11 @@
           <div class="stack-grid">
             <div class="stack-col reveal">
               <h3>Backend</h3>
-              <ul><li>PHP</li><li>Laravel</li><li>Node.js</li><li>Python</li><li>APIs REST</li></ul>
+              <ul><li>PHP</li><li>Laravel</li><li>Java</li><li>Node.js</li><li>Python</li><li>APIs REST</li></ul>
             </div>
             <div class="stack-col reveal delay-1">
-              <h3>Frontend</h3>
-              <ul><li>React</li><li>Inertia.js</li><li>Alpine.js</li><li>JavaScript</li><li>HTML y CSS</li></ul>
+              <h3>Frontend y móvil</h3>
+              <ul><li>Flutter y Dart</li><li>React</li><li>Filament y Livewire</li><li>Alpine.js</li><li>HTML y CSS</li></ul>
             </div>
             <div class="stack-col reveal delay-2">
               <h3>IA y automatización</h3>
@@ -303,7 +343,7 @@
             </div>
             <div class="stack-col reveal delay-3">
               <h3>Datos e infraestructura</h3>
-              <ul><li>MySQL</li><li>Docker</li><li>Git y GitHub</li><li>Linux y shell</li><li>Railway</li></ul>
+              <ul><li>MySQL y SQLite</li><li>Docker</li><li>Linux, Nginx y DigitalOcean</li><li>Firebase</li><li>Git y GitHub</li></ul>
             </div>
           </div>
 
@@ -350,7 +390,7 @@
               <div>
                 <h3>Proyectos de software propios</h3>
                 <p class="tl-role">Desarrollador full-stack</p>
-                <p>Diseño, desarrollo y despliegue de los sistemas de esta página: POS SaaS con facturación SRI, gestión de catering y bots con IA.</p>
+                <p>Diseño, desarrollo, despliegue y soporte de los sistemas de esta página: la plataforma y app de Valkyria para un box de CrossFit, Quinde POS con facturación SRI, gestión de catering y bots con IA.</p>
               </div>
             </li>
             <li class="reveal">

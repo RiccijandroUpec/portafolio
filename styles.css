@@ -734,9 +734,53 @@ p {
   color: var(--muted);
 }
 
+/* Capturas reales del proyecto (en lugar de la maqueta). */
+.project-shots {
+  position: relative;
+  padding: 18px;
+}
+
+.project-shots img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.project-shots .shot-phone {
+  position: absolute;
+  right: -10px;
+  bottom: -18px;
+  width: 30%;
+  border-radius: 14px;
+  border: 3px solid var(--surface);
+}
+
+.project-featured-reverse {
+  grid-template-columns: 1fr 1.1fr;
+}
+
+.project-featured-reverse .project-visual {
+  order: -1;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  margin-top: auto;
+}
+
+.project-links .project-private {
+  margin: 0;
+}
+
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
@@ -1107,6 +1151,7 @@ p {
   .project-featured { padding: 24px; }
 
   .project-visual { padding: 16px; }
+  .project-shots .shot-phone { right: 6px; bottom: -10px; width: 32%; }
 
   .stats > div { padding: 18px; }
   .stats dd { font-size: 1.6rem; }
