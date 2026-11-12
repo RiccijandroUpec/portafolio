@@ -1,109 +1,79 @@
 # 💼 Portafolio Profesional - Richard Stalyn Rodriguez Villarreal
 
-Portafolio web desarrollado para presentar perfil profesional, experiencia laboral, habilidades técnicas y proyectos reales.
+Portafolio web para presentar mi perfil profesional, experiencia, stack y proyectos reales.
 
 ## 🚀 Versión publicada
 
-El portafolio está desplegado en Railway y disponible públicamente en:
+🌐 **https://riccijandro.cyrshop.app/**
 
-- 🌐 https://riccijandro.cyrshop.app/ (dominio propio, requiere configurar el CNAME en el proveedor del dominio)
-- 🛤️ https://portafolio-production-0da0.up.railway.app/ (URL interna de Railway, sigue funcionando aunque uses el dominio propio)
-
-También puedes usar este repositorio como base local para desarrollo y actualizaciones.
+Publicado con **GitHub Pages** desde la rama `main` (raíz del repositorio). El dominio está en `CNAME` y en
+Cloudflare apunta con un registro CNAME a `riccijandroupec.github.io` (sin proxy). Cada `git push` a `main`
+actualiza el sitio en uno o dos minutos.
 
 ## 📝 Descripción
 
-Este proyecto muestra la marca personal de Richard Stalyn Rodriguez Villarreal, Ingeniero en Computación, con enfoque en:
+Marca personal de Richard Stalyn Rodriguez Villarreal, Ingeniero en Computación en Ibarra, Ecuador, con enfoque en:
 
-- 💻 Desarrollo de software (Laravel, Node.js)
+- 💻 Sistemas de gestión con **Laravel** y apps **Android en Flutter y Kotlin**
+- 🧾 Puntos de venta con **facturación electrónica del SRI**
 - 🤖 Automatización de procesos con IA (Playwright + Gemini/DeepSeek)
-- 🖥️ Sistemas operativos y administración de redes
-- 🌍 Cultura de código abierto
-- 🏥 Docencia y experiencia actual en Hospital San Vicente de Paul (Ibarra, Ecuador)
+- 🌍 Código abierto
 
-## ✨ Características principales
+## 🗂️ Proyectos que muestra
 
-- 📱 Diseño adaptable a móvil
-- 🇪🇸 Contenido en español
-- 🧩 Secciones profesionales completas (perfil, habilidades, proyectos, contacto)
-- 📊 Métricas de GitHub obtenidas en vivo desde la API pública
-- 💬 Contacto directo por WhatsApp (sin backend ni configuración de email)
-- 🔍 SEO técnico completo (Open Graph, Twitter Cards, JSON-LD, robots, sitemap, manifest)
+| Proyecto | Qué es | Enlace |
+|---|---|---|
+| Valkyria | Web, panel y app Flutter para un box de CrossFit (cliente real) | [valkyria.cyrshop.app](https://valkyria.cyrshop.app/) |
+| Quindello | Walkie talkie sin internet en Kotlin: red mesh por Bluetooth, voz Opus, SOS, cifrado y firmas | [quindello.cyrshop.app](https://quindello.cyrshop.app/) |
+| Quinde POS | Punto de venta con facturación SRI: escritorio (Java, GPL) y Android (Flutter) | [quindepos.cyrshop.app](https://quindepos.cyrshop.app/) |
+| POS multi-tenant | SaaS de punto de venta y facturación para varios comercios | privado |
+| Bot de WhatsApp | Recargas y pagos con IA y Playwright | [GitHub](https://github.com/RiccijandroUpec/WebScraper) |
+| RickTech | Gestión de catering con IA generativa | privado |
+| Dietas hospitalarias | Seguimiento de dietas de pacientes | [GitHub](https://github.com/RiccijandroUpec/dietas-hospital) |
+| CyR Shop | Tienda en línea con pedido por WhatsApp | [cyrshop.app](https://cyrshop.app/) |
+| Agenda de Crédito | App Android de uso interno (Flutter + Kotlin, SQLCipher) | privado |
 
-## 🛠️ Tecnologías utilizadas
+## ✨ Características
 
-- 🟧 **HTML5** — estructura semántica del sitio
-- 🎨 **CSS3** — estilos visuales y diseño responsivo
-- 💛 **JavaScript** — interactividad y consumo de la API de GitHub
-- 🐙 **GitHub REST API** — métricas en vivo (repos, commits, lenguaje principal)
-- 🔤 **Google Fonts** — tipografías Outfit y Playfair Display
-- 🏷️ **Schema.org / JSON-LD** — datos estructurados para SEO
-- 🚂 **Railway** — despliegue y hosting
+- 📱 Diseño adaptable a móvil, con tema claro y oscuro
+- 📊 Métricas de GitHub en vivo desde la API pública
+- 💬 Contacto directo por WhatsApp (sin backend)
+- 🔍 SEO técnico: Open Graph, Twitter Cards, JSON-LD (`Person`), canonical, robots y sitemap
+- 🖼️ Imágenes en WebP con carga diferida
 
-## 📂 Estructura del proyecto
+## 📂 Estructura
 
-- [index.html](index.html): página principal del portafolio
-- [styles.css](styles.css): estilos visuales
-- [script.js](script.js): interactividad y métricas de GitHub
-- [Riccijandro-CV.html](Riccijandro-CV.html): CV en formato web
-- [favicon.svg](favicon.svg): icono del sitio
-- [og-image.svg](og-image.svg): imagen social para SEO
-- [robots.txt](robots.txt): reglas para bots
-- [sitemap.xml](sitemap.xml): mapa del sitio
-- [site.webmanifest](site.webmanifest): manifest para instalación web
-
-## ✅ Requisitos
-
-- 🖥️ Servidor local (XAMPP en este caso) o cualquier servidor estático
-- 🌐 Conexión a internet para obtener métricas de GitHub
-
-## 📦 Despliegue
-
-La versión pública del sitio está alojada en Railway:
-
-- 🚂 [Portafolio en Railway](https://portafolio-production-0da0.up.railway.app/)
-
-Si realizas cambios, recuerda actualizar el despliegue para mantener la versión publicada sincronizada con el repositorio.
+| Archivo | Para qué sirve |
+|---|---|
+| [index.html](index.html) | Página principal |
+| [styles.css](styles.css) | Estilos |
+| [script.js](script.js) | Menú, tema, animaciones y métricas de GitHub |
+| [img/](img/) | Foto (`avatar.webp` en la portada; `avatar.png` lo usan los CV) y capturas de proyectos en WebP |
+| [Riccijandro-CV.html](Riccijandro-CV.html) / [Riccijandro-CV.pdf](Riccijandro-CV.pdf) | CV en web y el PDF que se descarga desde el sitio |
+| [cv comercial/](cv%20comercial/) | CV comercial de 2 páginas |
+| [og-image.png](og-image.png) | Imagen al compartir el enlace (WhatsApp, LinkedIn, Facebook) |
+| `robots.txt`, `sitemap.xml`, `site.webmanifest`, `favicon.svg`, `CNAME`, `.nojekyll` | Buscadores, ícono, dominio y GitHub Pages |
 
 ## 🧪 Ejecución local (XAMPP)
 
-1. Clona o coloca la carpeta del proyecto en:
-   - `C:/xampp/htdocs/portafolio`
+1. La carpeta está en `C:/xampp/htdocs/portafolio`.
 2. Inicia Apache desde el panel de XAMPP.
-3. Abre en el navegador:
-   - `http://localhost/portafolio/`
+3. Abre `http://localhost/portafolio/`.
+
+## ⚙️ Cómo actualizar
+
+- **Textos, proyectos y experiencia:** [index.html](index.html).
+- **Capturas nuevas:** guárdalas en `img/` en **WebP** (unos 1200 px de ancho las de escritorio y 540–600 px las
+  de celular), con `width`, `height`, `alt` y `loading="lazy"`.
+- **CV en PDF:** abre [Riccijandro-CV.html](Riccijandro-CV.html) y usa "Descargar PDF"; reemplaza
+  `Riccijandro-CV.pdf`.
+- Si cambias mucho el contenido, actualiza la fecha de `sitemap.xml`.
 
 ## 📬 Contacto
 
-El botón principal de la sección de contacto abre WhatsApp directamente (`wa.me/593983185069`) con un mensaje
-precargado. No depende de ningún backend, API key ni configuración de correo — funciona igual en local que en
-producción. El número y el texto del mensaje se editan directamente en el enlace dentro de [index.html](index.html).
-
-## ⚙️ Personalización rápida
-
-- 👤 Datos personales y textos: [index.html](index.html)
-- 📊 Métricas dinámicas de GitHub: [script.js](script.js)
-- 📄 Experiencia y perfil extendido: [Riccijandro-CV.html](Riccijandro-CV.html)
-- 🎨 Estilo visual: [styles.css](styles.css)
-- ⬇️ Descarga del CV en PDF: abre [Riccijandro-CV.html](Riccijandro-CV.html) y usa el botón "Descargar PDF"
-
-## 🔍 SEO
-
-El proyecto ya incluye:
-
-- 🏷️ Meta description y keywords
-- 📣 Open Graph y Twitter Card
-- 🧱 Schema.org (Person)
-- 🔗 Canonical apuntando al dominio real de producción (Railway)
-- 🤖 robots.txt
-- 🗺️ sitemap.xml
-
-Si en el futuro migras a un dominio propio, actualiza la URL en:
-
-- [index.html](index.html) (canonical, og:url, og:image, twitter:image, JSON-LD)
-- [robots.txt](robots.txt)
-- [sitemap.xml](sitemap.xml)
+El botón de contacto abre WhatsApp (`wa.me/593983185069`) con un mensaje precargado. Se edita en el enlace dentro
+de [index.html](index.html).
 
 ## 📄 Licencia
 
-Uso personal/profesional de portafolio.
+Uso personal y profesional de portafolio.
