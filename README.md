@@ -24,6 +24,7 @@ Marca personal de Richard Stalyn Rodriguez Villarreal, Ingeniero en Computación
 | Proyecto | Qué es | Enlace |
 |---|---|---|
 | Valkyria | Web, panel y app Flutter para un box de CrossFit (cliente real) | [valkyria.cyrshop.app](https://valkyria.cyrshop.app/) |
+| Daness | Agenda, fichas clínicas, seguimiento de medidas y vista TV para un spa (cliente real) | privado |
 | Quindello | Walkie talkie sin internet en Kotlin: red mesh por Bluetooth, voz Opus, SOS, cifrado y firmas | [quindello.cyrshop.app](https://quindello.cyrshop.app/) |
 | Quinde POS | Punto de venta con facturación SRI: escritorio (Java, GPL) y Android (Flutter) | [quindepos.cyrshop.app](https://quindepos.cyrshop.app/) |
 | POS multi-tenant | SaaS de punto de venta y facturación para varios comercios | privado |
