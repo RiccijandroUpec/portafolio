@@ -34,6 +34,10 @@ Marca personal de Richard Stalyn Rodriguez Villarreal, Ingeniero en Computación
 | CyR Shop | Tienda en línea con pedido por WhatsApp | [cyrshop.app](https://cyrshop.app/) |
 | Agenda de Crédito | App Android de uso interno (Flutter + Kotlin, SQLCipher) | privado |
 
+## 🧭 Secciones
+
+Proyectos · **Servicios** (sistemas a medida para negocios, con proceso de trabajo y botón de WhatsApp propio) · Stack · Experiencia · Sobre mí · Contacto.
+
 ## ✨ Características
 
 - 📱 Diseño adaptable a móvil, con tema claro y oscuro
@@ -50,7 +54,7 @@ Marca personal de Richard Stalyn Rodriguez Villarreal, Ingeniero en Computación
 | [styles.css](styles.css) | Estilos |
 | [script.js](script.js) | Menú, tema, animaciones y métricas de GitHub |
 | [img/](img/) | Foto (`avatar.webp` en la portada; `avatar.png` lo usan los CV) y capturas de proyectos en WebP |
-| [Riccijandro-CV.html](Riccijandro-CV.html) / [Riccijandro-CV.pdf](Riccijandro-CV.pdf) | CV en web y el PDF que se descarga desde el sitio |
+| [Riccijandro-CV.html](Riccijandro-CV.html) / [Riccijandro-CV.pdf](Riccijandro-CV.pdf) | **CV de desarrollador** (2 páginas A4) en web y el PDF que se descarga desde el sitio. Sin teléfonos de referencias ("disponibles bajo solicitud") |
 | [cv comercial/](cv%20comercial/) | CV comercial de 2 páginas |
 | [og-image.png](og-image.png) | Imagen al compartir el enlace (WhatsApp, LinkedIn, Facebook) |
 | `robots.txt`, `sitemap.xml`, `site.webmanifest`, `favicon.svg`, `CNAME`, `.nojekyll` | Buscadores, ícono, dominio y GitHub Pages |
@@ -66,8 +70,9 @@ Marca personal de Richard Stalyn Rodriguez Villarreal, Ingeniero en Computación
 - **Textos, proyectos y experiencia:** [index.html](index.html).
 - **Capturas nuevas:** guárdalas en `img/` en **WebP** (unos 1200 px de ancho las de escritorio y 540–600 px las
   de celular), con `width`, `height`, `alt` y `loading="lazy"`.
-- **CV en PDF:** abre [Riccijandro-CV.html](Riccijandro-CV.html) y usa "Descargar PDF"; reemplaza
-  `Riccijandro-CV.pdf`.
+- **CV en PDF:** edita [Riccijandro-CV.html](Riccijandro-CV.html) y genera el PDF con Chrome (respeta fuentes y diseño):
+  `chrome --headless=new --no-pdf-header-footer --print-to-pdf=Riccijandro-CV.pdf http://localhost/portafolio/Riccijandro-CV.html`
+  (o ábrelo en Chrome → Imprimir → Guardar como PDF, márgenes "Ninguno"). Debe quedar en 2 páginas.
 - Si cambias mucho el contenido, actualiza la fecha de `sitemap.xml`.
 
 ## 📬 Contacto
