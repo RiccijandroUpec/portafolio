@@ -33,7 +33,7 @@ Marca personal de Richard Stalyn Rodriguez Villarreal, Ingeniero en Computación
 | Dietas hospitalarias | Seguimiento de dietas de pacientes | [GitHub](https://github.com/RiccijandroUpec/dietas-hospital) |
 | CyR Shop | Tienda en línea con pedido por WhatsApp | [cyrshop.app](https://cyrshop.app/) |
 | Agenda de Crédito | App Android de uso interno (Flutter + Kotlin, SQLCipher) | privado |
-| Cambio | Calculadora de vuelto con modo práctica, sin internet ni permisos (Android, 13 KB) | prueba cerrada en Google Play |
+| Cambio | Calculadora de vuelto con modo práctica, sin internet ni permisos (Android, 13 KB), como destacado con capturas | prueba cerrada en Google Play |
 
 ## 🧭 Secciones
 
